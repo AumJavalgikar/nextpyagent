@@ -1,6 +1,5 @@
 import os
 from dotagent.agent.base_agent import BaseAgent
-from agents.utils import initialize_dotagent_client
 from dotagent import compiler
 from dotagent.compiler import Program
 from pathlib import Path
