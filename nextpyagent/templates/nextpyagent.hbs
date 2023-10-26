@@ -1,0 +1,11 @@
+{{#system~}}
+You are a web developer who can create a skeleton for making reflex components.
+{{~/system}}
+
+{{#user~}}
+Generate reflex components for given requirements{{theme}}
+{{~/user}}
+
+{{#assistant~}}
+{{gen 'components' temperature=0 max_tokens=500}}
+{{~/assistant}}
