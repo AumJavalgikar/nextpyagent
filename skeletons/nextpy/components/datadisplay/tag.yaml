@@ -1,0 +1,27 @@
+- TagLabel:
+    description: '"""The label of the tag."""'
+    methods: null
+    props: null
+- TagLeftIcon:
+    description: '"""The left icon of the tag."""'
+    methods: null
+    props: null
+- TagRightIcon:
+    description: '"""The right icon of the tag."""'
+    methods: null
+    props: null
+- TagCloseButton:
+    description: '"""The close button of the tag."""'
+    methods: null
+    props: null
+- Tag:
+    description: '"""The parent wrapper that provides context for its children."""'
+    methods:
+      methods:
+        create: '(        cls,        label: Component,        *,        left_icon:
+          Optional[Component] = None,        right_icon: Optional[Component] = None,        close_button:
+          Optional[Component] = None,        **props,    )'
+    props:
+    - 'color_scheme: Var[LiteralTagColorScheme]'
+    - 'size: Var[LiteralTagSize]'
+    - 'variant: Var[LiteralVariant]'

@@ -1,0 +1,11 @@
+- Link:
+    description: '"""Link to another page."""'
+    methods:
+      methods:
+        create: (cls, *children, **props)
+    props:
+    - 'rel: Var[str]'
+    - 'href: Var[str]'
+    - 'text: Var[str]'
+    - 'as_: Var[str] = BaseVar.create(value="{NextLink}", _var_is_local=False)'
+    - 'is_external: Var[bool]'

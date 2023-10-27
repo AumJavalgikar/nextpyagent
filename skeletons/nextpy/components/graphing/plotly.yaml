@@ -1,0 +1,14 @@
+- PlotlyLib:
+    description: '"""A component that wraps a plotly lib."""'
+    methods: null
+    props:
+    - 'lib_dependencies: List[str] = ["plotly.js@2.22.0"]'
+- Plotly:
+    description: '"""Display a plotly graph."""'
+    methods: null
+    props:
+    - 'data: Var[Figure]'
+    - 'layout: Var[Dict]'
+    - 'width: Var[str]'
+    - 'height: Var[str]'
+    - 'use_resize_handler: Var[bool]'

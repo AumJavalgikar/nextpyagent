@@ -1,0 +1,30 @@
+- Skeleton:
+    description: '"""Skeleton is used to display the loading state of some components.
+      You can use it as a standalone component. Or to wrap another component to take
+      the same height and width."""'
+    methods: null
+    props:
+    - 'end_color: Var[str]'
+    - 'fade_duration: Var[float]'
+    - 'is_loaded: Var[bool]'
+    - 'speed: Var[float]'
+    - 'start_color: Var[str]'
+- SkeletonCircle:
+    description: '"""SkeletonCircle is used to display the loading state of some components."""'
+    methods: null
+    props:
+    - 'end_color: Var[str]'
+    - 'fade_duration: Var[float]'
+    - 'is_loaded: Var[bool]'
+    - 'speed: Var[float]'
+    - 'start_color: Var[str]'
+- SkeletonText:
+    description: '"""SkeletonText is used to display the loading state of some components."""'
+    methods: null
+    props:
+    - 'end_color: Var[str]'
+    - 'fade_duration: Var[float]'
+    - 'is_loaded: Var[bool]'
+    - 'speed: Var[float]'
+    - 'start_color: Var[str]'
+    - 'no_of_lines: Var[int]'

@@ -1,0 +1,5 @@
+- Fragment:
+    description: '"""A React fragment to return multiple components from a function
+      without wrapping it in a container."""'
+    methods: null
+    props: null

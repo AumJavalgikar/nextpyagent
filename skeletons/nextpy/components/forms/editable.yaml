@@ -1,0 +1,26 @@
+- Editable:
+    description: '"""The wrapper component that provides context value."""'
+    methods: null
+    props:
+    - 'is_disabled: Var[bool]'
+    - 'is_preview_focusable: Var[bool]'
+    - 'placeholder: Var[str]'
+    - 'select_all_on_focus: Var[bool]'
+    - 'start_with_edit_view: Var[bool]'
+    - 'submit_on_blur: Var[bool]'
+    - 'value: Var[str]'
+    - 'default_value: Var[str]'
+- EditableInput:
+    description: '"""The edit view of the component. It shows when you click or focus
+      on the text."""'
+    methods: null
+    props: null
+- EditableTextarea:
+    description: '"""Use the textarea element to handle multi line text input in an
+      editable context."""'
+    methods: null
+    props: null
+- EditablePreview:
+    description: '"""The read-only view of the component."""'
+    methods: null
+    props: null

@@ -1,0 +1,6 @@
+- Container:
+    description: '"""A flexbox container that centers its children and sets a max
+      width."""'
+    methods: null
+    props:
+    - 'center_content: Var[bool]'

@@ -1,0 +1,21 @@
+- Alert:
+    description: '"""An alert feedback box."""'
+    methods:
+      methods:
+        create: (        cls, *children, icon=True, title="Alert title", desc=None,
+          **props    )
+    props:
+    - 'status: Var[LiteralStatus]'
+    - 'variant: Var[LiteralAlertVariant]'
+- AlertIcon:
+    description: '"""An icon displayed in the alert."""'
+    methods: null
+    props: null
+- AlertTitle:
+    description: '"""The title of the alert."""'
+    methods: null
+    props: null
+- AlertDescription:
+    description: '"""AlertDescription composes the Box component."""'
+    methods: null
+    props: null

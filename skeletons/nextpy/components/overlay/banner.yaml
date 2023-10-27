@@ -1,0 +1,18 @@
+- WebsocketTargetURL:
+    description: '"""A component that renders the websocket target URL."""'
+    methods:
+      methods:
+        create: (cls)
+    props: null
+- ConnectionBanner:
+    description: '"""A connection banner component."""'
+    methods:
+      methods:
+        create: '(cls, comp: Optional[Component] = None)'
+    props: null
+- ConnectionModal:
+    description: '"""A connection status modal window."""'
+    methods:
+      methods:
+        create: '(cls, comp: Optional[Component] = None)'
+    props: null

@@ -1,0 +1,64 @@
+- Table:
+    description: '"""A table component."""'
+    methods:
+      methods:
+        create: (        cls, *children, caption=None, headers=None, rows=None, footers=None,
+          **props    )
+    props:
+    - 'color_scheme: Var[str]'
+    - 'variant: Var[str]'
+    - 'size: Var[str]'
+    - 'placement: Var[str]'
+- Thead:
+    description: '"""A table header component."""'
+    methods:
+      methods:
+        create: (cls, *children, headers=None, **props)
+        validate_headers: (headers)
+    props:
+    - 'invalid_children: List[str] = ["Tbody", "Thead", "Tfoot"]'
+- Tbody:
+    description: '"""A table body component."""'
+    methods:
+      methods:
+        create: (cls, *children, rows=None, **props)
+        validate_rows: (rows)
+    props:
+    - 'invalid_children: List[str] = ["Tbody", "Thead", "Tfoot", "Td", "Th"]'
+- Tfoot:
+    description: '"""A table footer component."""'
+    methods:
+      methods:
+        create: (cls, *children, footers=None, **props)
+        validate_footers: (footers)
+    props:
+    - 'invalid_children: List[str] = ["Tbody", "Thead", "Td", "Th", "Tfoot"]'
+- Tr:
+    description: '"""A table row component."""'
+    methods:
+      methods:
+        create: '(cls, *children, cell_type: str = "", cells=None, **props)'
+    props:
+    - 'invalid_children: List[str] = ["Tbody", "Thead", "Tfoot", "Tr"]'
+- Th:
+    description: '"""A table header cell component."""'
+    methods: null
+    props:
+    - 'invalid_children: List[str] = ["Tbody", "Thead", "Tr", "Td", "Th"]'
+    - 'is_numeric: Var[bool]'
+- Td:
+    description: '"""A table data cell component."""'
+    methods: null
+    props:
+    - 'invalid_children: List[str] = ["Tbody", "Thead"]'
+    - 'is_numeric: Var[bool]'
+- TableCaption:
+    description: '"""A table caption component."""'
+    methods: null
+    props:
+    - 'placement: Var[str]'
+- TableContainer:
+    description: '"""The table container component renders a div that wraps the table
+      component."""'
+    methods: null
+    props: null

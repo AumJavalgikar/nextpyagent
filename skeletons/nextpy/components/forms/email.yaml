@@ -1,0 +1,5 @@
+- Email:
+    description: '"""An email input component."""'
+    methods: null
+    props:
+    - 'type_: Var[str] = "email"'

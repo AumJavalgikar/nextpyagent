@@ -1,0 +1,37 @@
+- CommonMarginProps:
+    description: '"""Many radix-themes elements accept shorthand margin props."""'
+    methods: null
+    props:
+    - 'm: Var[LiteralSize]'
+    - 'mx: Var[LiteralSize]'
+    - 'my: Var[LiteralSize]'
+    - 'mt: Var[LiteralSize]'
+    - 'mr: Var[LiteralSize]'
+    - 'mb: Var[LiteralSize]'
+    - 'ml: Var[LiteralSize]'
+- RadixThemesComponent:
+    description: '"""Base class for all @radix-ui/themes components."""'
+    methods:
+      methods:
+        create: (cls, *children, **props)
+    props: null
+- Theme:
+    description: null
+    methods: null
+    props:
+    - 'has_background: Var[bool]'
+    - 'appearance: Var[LiteralAppearance]'
+    - 'accent_color: Var[LiteralAccentColor]'
+    - 'gray_color: Var[LiteralGrayColor]'
+    - 'panel_background: Var[LiteralPanelBackground]'
+    - 'radius: Var[LiteralRadius]'
+    - 'scaling: Var[LiteralScaling]'
+- ThemePanel:
+    description: null
+    methods: null
+    props:
+    - 'default_open: Var[bool]'
+- RadixThemesColorModeProvider:
+    description: '"""Next-themes integration for radix themes components."""'
+    methods: null
+    props: null

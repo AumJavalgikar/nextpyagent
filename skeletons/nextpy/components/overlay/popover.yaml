@@ -1,0 +1,59 @@
+- Popover:
+    description: '"""The wrapper that provides props, state, and context to its children."""'
+    methods:
+      methods:
+        create: (        cls,        *children,        trigger=None,        header=None,        body=None,        footer=None,        use_close_button=False,        **props,    )
+    props:
+    - 'arrow_padding: Var[int]'
+    - 'arrow_shadow_color: Var[str]'
+    - 'arrow_size: Var[int]'
+    - 'auto_focus: Var[bool]'
+    - 'boundary: Var[str]'
+    - 'close_on_blur: Var[bool]'
+    - 'close_on_esc: Var[bool]'
+    - 'default_is_open: Var[bool]'
+    - 'direction: Var[LiteralChakraDirection]'
+    - 'flip: Var[bool]'
+    - 'gutter: Var[int]'
+    - 'id_: Var[str]'
+    - 'is_lazy: Var[bool]'
+    - 'lazy_behavior: Var[str]'
+    - 'is_open: Var[bool]'
+    - 'match_width: Var[bool]'
+    - 'placement: Var[str]'
+    - 'prevent_overflow: Var[bool]'
+    - 'return_focus_on_close: Var[bool]'
+    - 'strategy: Var[LiteralMenuStrategy]'
+    - 'trigger: Var[LiteralPopOverTrigger]'
+- PopoverContent:
+    description: '"""The popover itself."""'
+    methods: null
+    props: null
+- PopoverHeader:
+    description: '"""The header of the popover."""'
+    methods: null
+    props: null
+- PopoverFooter:
+    description: '"""Display a popover footer."""'
+    methods: null
+    props: null
+- PopoverBody:
+    description: '"""The body of the popover."""'
+    methods: null
+    props: null
+- PopoverArrow:
+    description: '"""A visual arrow that points to the reference (or trigger)."""'
+    methods: null
+    props: null
+- PopoverCloseButton:
+    description: '"""A button to close the popover."""'
+    methods: null
+    props: null
+- PopoverAnchor:
+    description: '"""Used to wrap the position-reference element."""'
+    methods: null
+    props: null
+- PopoverTrigger:
+    description: '"""Used to wrap the reference (or trigger) element."""'
+    methods: null
+    props: null

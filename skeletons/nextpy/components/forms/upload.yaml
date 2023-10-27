@@ -1,0 +1,15 @@
+- Upload:
+    description: '"""A file upload component."""'
+    methods:
+      methods:
+        create: (cls, *children, **props)
+    props:
+    - 'accept: Var[Optional[Dict[str, List]]]'
+    - 'disabled: Var[bool]'
+    - 'max_files: Var[int]'
+    - 'max_size: Var[int]'
+    - 'min_size: Var[int]'
+    - 'multiple: Var[bool] = True'
+    - 'no_click: Var[bool]'
+    - 'no_drag: Var[bool]'
+    - 'no_keyboard: Var[bool]'

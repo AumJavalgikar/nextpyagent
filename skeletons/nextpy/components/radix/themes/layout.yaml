@@ -1,0 +1,53 @@
+- LayoutComponent:
+    description: null
+    methods: null
+    props:
+    - 'p: Var[LiteralSize]'
+    - 'px: Var[LiteralSize]'
+    - 'py: Var[LiteralSize]'
+    - 'pt: Var[LiteralSize]'
+    - 'pr: Var[LiteralSize]'
+    - 'pb: Var[LiteralSize]'
+    - 'pl: Var[LiteralSize]'
+    - 'shrink: Var[LiteralBoolNumber]'
+    - 'grow: Var[LiteralBoolNumber]'
+- Box:
+    description: '"""A fundamental layout building block, based on <div>."""'
+    methods: null
+    props: null
+- Flex:
+    description: '"""Component for creating flex layouts."""'
+    methods: null
+    props:
+    - 'as_child: Var[bool]'
+    - 'display: Var[LiteralFlexDisplay]'
+    - 'direction: Var[LiteralFlexDirection]'
+    - 'align: Var[LiteralAlign]'
+    - 'justify: Var[LiteralJustify]'
+    - 'wrap: Var[LiteralFlexWrap]'
+    - 'gap: Var[LiteralSize]'
+- Grid:
+    description: '"""Component for creating grid layouts."""'
+    methods: null
+    props:
+    - 'as_child: Var[bool]'
+    - 'display: Var[LiteralGridDisplay]'
+    - 'columns: Var[str]'
+    - 'rows: Var[str]'
+    - 'flow: Var[LiteralGridFlow]'
+    - 'align: Var[LiteralAlign]'
+    - 'justify: Var[LiteralJustify]'
+    - 'gap: Var[LiteralSize]'
+    - 'gap_x: Var[LiteralSize]'
+    - 'gap_x: Var[LiteralSize]'
+- Container:
+    description: null
+    methods: null
+    props:
+    - '"""Constrains the maximum width of page content.    See https://www.radix-ui.com/themes/docs/components/container    """'
+    - 'size: Var[LiteralContainerSize]'
+- Section:
+    description: '"""Denotes a section of page content."""'
+    methods: null
+    props:
+    - 'size: Var[LiteralSectionSize]'

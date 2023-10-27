@@ -1,0 +1,57 @@
+- Text:
+    description: '"""A foundational text primitive based on the <span> element."""'
+    methods: null
+    props:
+    - 'as_child: Var[bool]'
+    - 'as_: Var[str]'
+    - 'size: Var[LiteralTextSize]'
+    - 'weight: Var[LiteralTextWeight]'
+    - 'align: Var[LiteralTextAlign]'
+    - 'trim: Var[LiteralTextTrim]'
+    - 'color: Var[LiteralAccentColor]'
+    - 'high_contrast: Var[bool]'
+- Heading:
+    description: '"""A semantic heading element."""'
+    methods: null
+    props: null
+- Blockquote:
+    description: '"""A block level extended quotation."""'
+    methods: null
+    props:
+    - 'size: Var[LiteralTextSize]'
+    - 'weight: Var[LiteralTextWeight]'
+    - 'color: Var[LiteralAccentColor]'
+    - 'high_contrast: Var[bool]'
+- Code:
+    description: '"""Marks text to signify a short fragment of computer code."""'
+    methods: null
+    props:
+    - 'variant: Var[LiteralVariant]'
+- Em:
+    description: '"""Marks text to stress emphasis."""'
+    methods: null
+    props: null
+- Kbd:
+    description: '"""Represents keyboard input or a hotkey."""'
+    methods: null
+    props:
+    - 'size: Var[LiteralTextSize]'
+- Link:
+    description: '"""A semantic element for navigation between pages."""'
+    methods: null
+    props:
+    - 'as_child: Var[bool]'
+    - 'size: Var[LiteralTextSize]'
+    - 'weight: Var[LiteralTextWeight]'
+    - 'trim: Var[LiteralTextTrim]'
+    - 'underline: Var[LiteralLinkUnderline]'
+    - 'color: Var[LiteralAccentColor]'
+    - 'high_contrast: Var[bool]'
+- Quote:
+    description: '"""A short inline quotation."""'
+    methods: null
+    props: null
+- Strong:
+    description: '"""Marks text to signify strong importance."""'
+    methods: null
+    props: null

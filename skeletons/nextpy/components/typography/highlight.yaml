@@ -1,0 +1,6 @@
+- Highlight:
+    description: '"""Highlights a specific part of a string."""'
+    methods: null
+    props:
+    - 'query: Var[List[str]]'
+    - 'styles: Var[Dict] = {"px": "2", "py": "1", "rounded": "full", "bg": "teal.100"}'

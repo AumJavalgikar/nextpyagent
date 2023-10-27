@@ -1,0 +1,8 @@
+- Script:
+    description: null
+    methods:
+      methods:
+        create: (cls, *children, **props)
+    props:
+    - 'src: Var[str]'
+    - 'strategy: Var[str] = "afterInteractive"'

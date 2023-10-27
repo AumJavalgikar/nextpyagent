@@ -1,0 +1,17 @@
+- RawLink:
+    description: '"""A component that displays the title of the current page."""'
+    methods: null
+    props:
+    - 'href: Var[str]'
+    - 'rel: Var[str]'
+- ScriptTag:
+    description: '"""A script tag with the specified type and source."""'
+    methods: null
+    props:
+    - 'type_: Var[str]'
+    - 'source: Var[str]'
+    - 'integrity: Var[str]'
+    - 'crossorigin: Var[str]'
+    - 'referrer_policy: Var[str]'
+    - 'is_async: Var[bool]'
+    - 'defer: Var[bool]'

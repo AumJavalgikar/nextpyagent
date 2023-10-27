@@ -1,0 +1,5 @@
+- Span:
+    description: '"""Render an inline span of text."""'
+    methods: null
+    props:
+    - 'as_: Var[str] = "span"'

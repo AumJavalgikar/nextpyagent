@@ -1,0 +1,40 @@
+- Slider:
+    description: '"""The wrapper that provides context and functionality for all children."""'
+    methods:
+      methods:
+        create: (cls, *children, **props)
+    props:
+    - 'value: Var[int]'
+    - 'color_scheme: Var[str]'
+    - 'default_value: Var[int]'
+    - 'direction: Var[LiteralChakraDirection]'
+    - 'focus_thumb_on_change: Var[bool]'
+    - 'is_disabled: Var[bool]'
+    - 'is_read_only: Var[bool]'
+    - 'is_reversed: Var[bool]'
+    - 'min_: Var[int]'
+    - 'max_: Var[int]'
+    - 'step: Var[int]'
+    - 'min_steps_between_thumbs: Var[int]'
+    - 'orientation: Var[LiteralLayout]'
+    - 'min_h: Var[str]'
+    - 'min_w: Var[str]'
+    - 'max_h: Var[str]'
+    - 'max_w: Var[str]'
+- SliderTrack:
+    description: '"""The empty part of the slider that shows the track."""'
+    methods: null
+    props: null
+- SliderFilledTrack:
+    description: '"""The filled part of the slider."""'
+    methods: null
+    props: null
+- SliderThumb:
+    description: '"""The handle that''s used to change the slider value."""'
+    methods: null
+    props:
+    - 'box_size: Var[str]'
+- SliderMark:
+    description: '"""The label or mark that shows names for specific slider values."""'
+    methods: null
+    props: null

@@ -1,0 +1,23 @@
+- Title:
+    description: '"""A component that displays the title of the current page."""'
+    methods: null
+    props: null
+- Meta:
+    description: '"""A component that displays metadata for the current page."""'
+    methods: null
+    props:
+    - 'char_set: Optional[str] = None'
+    - 'content: Optional[str] = None'
+    - 'name: Optional[str] = None'
+    - 'property: Optional[str] = None'
+    - 'http_equiv: Optional[str] = None'
+- Description:
+    description: '"""A component that displays the title of the current page."""'
+    methods: null
+    props:
+    - 'name: str = "description"'
+- Image:
+    description: '"""A component that displays the title of the current page."""'
+    methods: null
+    props:
+    - 'property: str = "og:image"'

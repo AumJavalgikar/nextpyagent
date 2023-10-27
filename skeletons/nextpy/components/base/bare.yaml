@@ -1,0 +1,7 @@
+- Bare:
+    description: '"""A component with no tag."""'
+    methods:
+      methods:
+        create: '(cls, contents: Any)'
+    props:
+    - 'contents: Var[str]'

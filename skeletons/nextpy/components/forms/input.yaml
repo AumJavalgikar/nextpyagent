@@ -1,0 +1,44 @@
+- Input:
+    description: '"""The Input component is a component that is used to get user input
+      in a text field."""'
+    methods:
+      methods:
+        create: (cls, *children, **props)
+    props:
+    - 'value: Var[str]'
+    - 'default_value: Var[str]'
+    - 'placeholder: Var[str]'
+    - 'type_: Var[str] = "text"'
+    - 'error_border_color: Var[str]'
+    - 'focus_border_color: Var[str]'
+    - 'is_disabled: Var[bool]'
+    - 'is_invalid: Var[bool]'
+    - 'is_read_only: Var[bool]'
+    - 'is_required: Var[bool]'
+    - 'variant: Var[LiteralInputVariant]'
+    - 'size: Var[LiteralButtonSize]'
+- InputGroup:
+    description: '"""The InputGroup component is a component that is used to group
+      a set of inputs."""'
+    methods: null
+    props: null
+- InputLeftAddon:
+    description: '"""The InputLeftAddon component is a component that is used to add
+      an addon to the left of an input."""'
+    methods: null
+    props: null
+- InputRightAddon:
+    description: '"""The InputRightAddon component is a component that is used to
+      add an addon to the right of an input."""'
+    methods: null
+    props: null
+- InputLeftElement:
+    description: '"""The InputLeftElement component is a component that is used to
+      add an element to the left of an input."""'
+    methods: null
+    props: null
+- InputRightElement:
+    description: '"""The InputRightElement component is a component that is used to
+      add an element to the right of an input."""'
+    methods: null
+    props: null

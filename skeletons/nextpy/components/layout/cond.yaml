@@ -1,0 +1,10 @@
+- Cond:
+    description: '"""Render one of two components based on a condition."""'
+    methods:
+      methods:
+        create: '(        cls,        cond: Var,        comp1: Component,        comp2:
+          Optional[Component] = None,    )'
+    props:
+    - 'cond: Var[Any]'
+    - 'comp1: Component = Fragment.create()'
+    - 'comp2: Component = Fragment.create()'

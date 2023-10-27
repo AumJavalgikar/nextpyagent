@@ -1,0 +1,17 @@
+- Image:
+    description: '"""Display an image."""'
+    methods:
+      methods:
+        create: (cls, *children, **props)
+    props:
+    - 'align: Var[str]'
+    - 'fallback: Optional[Component] = None'
+    - 'fallback_src: Var[str]'
+    - 'fit: Var[str]'
+    - 'html_height: Var[str]'
+    - 'html_width: Var[str]'
+    - 'ignore_fallback: Var[bool]'
+    - 'loading: Var[LiteralImageLoading]'
+    - 'src: Var[Any]'
+    - 'alt: Var[str]'
+    - 'src_set: Var[str]'

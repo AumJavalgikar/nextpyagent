@@ -1,0 +1,37 @@
+- EditorButtonList:
+    description: '"""List enum that provides three predefined button lists."""'
+    methods: null
+    props: null
+- EditorOptions:
+    description: null
+    methods: null
+    props:
+    - '"""Some of the additional options to configure the Editor.    Complete list
+      of options found here:    https://github.com/JiHong88/SunEditor/blob/master/README.md#options.    """'
+    - 'default_tag: Optional[str] = None'
+    - 'mode: Optional[str] = None'
+    - 'rtl: Optional[bool] = None'
+    - 'button_list: Optional[List[Union[List[str], str]]]'
+- Editor:
+    description: null
+    methods:
+      methods:
+        create: '(cls, set_options: Optional[EditorOptions] = None, **props)'
+    props:
+    - 'lib_dependencies: List[str] = ["suneditor"]'
+    - 'lang: Var[        Union[            Literal[                "en",                "da",                "de",                "es",                "fr",                "ja",                "ko",                "pt_br",                "ru",                "zh_cn",                "ro",                "pl",                "ckb",                "lv",                "se",                "ua",                "he",                "it",            ],            dict,        ]    ]'
+    - 'name: Var[str]'
+    - 'default_value: Var[str]'
+    - 'width: Var[str]'
+    - 'height: Var[str]'
+    - 'placeholder: Var[str]'
+    - 'auto_focus: Var[bool]'
+    - 'set_options: Var[Dict]'
+    - 'set_all_plugins: Var[bool]'
+    - 'set_contents: Var[str]'
+    - 'append_contents: Var[str]'
+    - 'set_default_style: Var[str]'
+    - 'disable: Var[bool]'
+    - 'hide: Var[bool]'
+    - 'hide_toolbar: Var[bool]'
+    - 'disable_toolbar: Var[bool]'

@@ -1,0 +1,35 @@
+- Transition:
+    description: '"""Base componemt of all transitions."""'
+    methods: null
+    props:
+    - 'in_: Var[bool]'
+    - 'unmount_on_exit: Var[bool]'
+- Fade:
+    description: '"""Fade component cab be used show and hide content of your app."""'
+    methods: null
+    props: null
+- ScaleFade:
+    description: '"""Fade component can be scaled and reverse your app."""'
+    methods: null
+    props:
+    - 'initial_scale: Var[float]'
+    - 'reverse: Var[bool]'
+- Slide:
+    description: '"""Side can be used show content below your app."""'
+    methods: null
+    props:
+    - 'direction: Var[str]'
+- SlideFade:
+    description: '"""SlideFade component."""'
+    methods: null
+    props:
+    - 'offsetX: Var[Union[str, int]]'
+    - 'offsetY: Var[Union[str, int]]'
+    - 'reverse: Var[bool]'
+- Collapse:
+    description: '"""Collapse component can collapse some content."""'
+    methods: null
+    props:
+    - 'animateOpacity: Var[bool]'
+    - 'endingHeight: Var[str]'
+    - 'startingHeight: Var[Union[str, int]]'

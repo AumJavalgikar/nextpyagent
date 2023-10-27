@@ -1,0 +1,5 @@
+- VisuallyHidden:
+    description: '"""A component that visually hides content while still allowing
+      it to be read by screen readers."""'
+    methods: null
+    props: null

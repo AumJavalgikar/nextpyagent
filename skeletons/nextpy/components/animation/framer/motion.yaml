@@ -1,0 +1,171 @@
+- FramerMotion:
+    description: '"""A component that wraps all the framer motion components."""'
+    methods: null
+    props: null
+- MotionAttributes:
+    description: null
+    methods: null
+    props:
+    - 'animate: Var[Any]'
+    - 'initial: Var[Any]'
+    - 'transformTemplate: Var[str]'
+    - 'exit: Var[Dict[str, Any]]'
+    - 'transition: Var[Dict[str, Any]]'
+    - 'variant: Var[Dict[Any, Any]]'
+    - 'layout: Var[Any]'
+    - 'layoutId: Var[str]'
+    - 'layoutDependency: Var[Any]'
+    - 'layoutScroll: Var[bool]'
+    - 'inherit: Var[bool]'
+    - 'whileHover: Var[Dict[str, Any]]'
+    - 'whileTap: Var[Dict[str, Any]]'
+    - 'whileFocus: Var[Dict[str, Any]]'
+    - 'drag: Var[bool | str]'
+    - 'whileDrag: Var[Any]'
+    - 'dragConstraints: Var[Any]'
+    - 'dragSnapToOrigin: Var[bool]'
+    - 'dragElastic: Var[int]'
+    - 'dragMomentum: Var[bool]'
+    - 'dragTransition: Var[Dict[str, Any]]'
+    - 'dragPropagation: Var[bool]'
+    - 'dragControls: Var[Any]'
+    - 'dragListener: Var[bool]'
+    - 'whileInView: Var[Any]'
+- MotionBase:
+    description: '"""A component that wraps Framer Motion"""'
+    methods: null
+    props: null
+- MotionA:
+    description: '"""A framer motion component that wraps motion.a element"""'
+    methods: null
+    props: null
+- MotionArticle:
+    description: '"""A framer motion component that wraps motion.Article element"""'
+    methods: null
+    props: null
+- MotionAside:
+    description: '"""A framer motion component that wraps motion.aside element"""'
+    methods: null
+    props: null
+- MotionButton:
+    description: '"""A framer motion component that wraps motion.button element"""'
+    methods: null
+    props: null
+- MotionDiv:
+    description: '"""A framer motion component that wraps motion.div element"""'
+    methods: null
+    props: null
+- MotionFieldset:
+    description: '"""A framer motion component that wraps motion.fieldset element"""'
+    methods: null
+    props: null
+- MotionFooter:
+    description: '"""A framer motion component that wraps motion.footer element"""'
+    methods: null
+    props: null
+- MotionForm:
+    description: '"""A framer motion component that wraps motion.form element"""'
+    methods: null
+    props: null
+- MotionH1:
+    description: '"""A framer motion component that wraps motion.h1 element"""'
+    methods: null
+    props: null
+- MotionH2:
+    description: '"""A framer motion component that wraps motion.h2 element"""'
+    methods: null
+    props: null
+- MotionH3:
+    description: '"""A framer motion component that wraps motion.h3 element"""'
+    methods: null
+    props: null
+- MotionH4:
+    description: '"""A framer motion component that wraps motion.h4 element"""'
+    methods: null
+    props: null
+- MotionH5:
+    description: '"""A framer motion component that wraps motion.h5 element"""'
+    methods: null
+    props: null
+- MotionH6:
+    description: '"""A framer motion component that wraps motion.h6 element"""'
+    methods: null
+    props: null
+- MotionHeader:
+    description: '"""A framer motion component that wraps motion.header element"""'
+    methods: null
+    props: null
+- MotionImg:
+    description: '"""A framer motion component that wraps motion.img element"""'
+    methods: null
+    props: null
+- MotionInput:
+    description: '"""A framer motion component that wraps motion.input element"""'
+    methods:
+      methods:
+        animate: (self)
+    props: null
+- MotionLabel:
+    description: '"""A framer motion component that wraps motion.label element"""'
+    methods: null
+    props: null
+- MotionLi:
+    description: '"""A framer motion component that wraps motion.li element"""'
+    methods: null
+    props: null
+- MotionMain:
+    description: '"""A framer motion component that wraps motion.main element"""'
+    methods: null
+    props: null
+- MotionNav:
+    description: '"""A framer motion component that wraps motion.nav element"""'
+    methods: null
+    props: null
+- MotionOl:
+    description: '"""A framer motion component that wraps motion.ol element"""'
+    methods: null
+    props: null
+- MotionOption:
+    description: '"""A framer motion component that wraps motion.option element"""'
+    methods: null
+    props: null
+- MotionP:
+    description: '"""A framer motion component that wraps motion.p element"""'
+    methods: null
+    props: null
+- MotionSection:
+    description: '"""A framer motion component that wraps motion.section element"""'
+    methods: null
+    props: null
+- MotionSelect:
+    description: '"""A framer motion component that wraps motion.select element"""'
+    methods: null
+    props: null
+- MotionSpan:
+    description: '"""A framer motion component that wraps motion.span element"""'
+    methods: null
+    props: null
+- MotionTable:
+    description: '"""A framer motion component that wraps motion.table element"""'
+    methods: null
+    props: null
+- MotionTd:
+    description: '"""A framer motion component that wraps motion.td element"""'
+    methods: null
+    props: null
+- MotionTextArea:
+    description: '"""A framer motion component that wraps motion.textarea element"""'
+    methods: null
+    props: null
+- MotionTh:
+    description: '"""A framer motion component that wraps motion.th element"""'
+    methods: null
+    props: null
+- MotionTr:
+    description: '"""A framer motion component that wraps motion.tr element"""'
+    methods: null
+    props: null
+- MotionUl:
+    description: '"""A framer motion component that wraps motion.ul element"""'
+    methods: null
+    props: null

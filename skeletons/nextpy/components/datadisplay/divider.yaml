@@ -1,0 +1,6 @@
+- Divider:
+    description: '"""Dividers are used to visually separate content in a list or group."""'
+    methods: null
+    props:
+    - 'orientation: Var[LiteralLayout]'
+    - 'variant: Var[LiteralDividerVariant]'

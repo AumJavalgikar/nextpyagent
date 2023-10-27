@@ -1,0 +1,4 @@
+- KeyboardKey:
+    description: '"""Display a keyboard key text."""'
+    methods: null
+    props: null

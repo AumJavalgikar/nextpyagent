@@ -1,0 +1,7 @@
+- Box:
+    description: '"""A generic container component that can contain other components."""'
+    methods: null
+    props:
+    - 'element: Var[str]'
+    - 'src: Var[str]'
+    - 'alt: Var[str]'

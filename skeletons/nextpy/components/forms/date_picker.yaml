@@ -1,0 +1,5 @@
+- DatePicker:
+    description: '"""A date input component."""'
+    methods: null
+    props:
+    - 'type_: Var[str] = "date"'

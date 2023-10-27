@@ -1,0 +1,23 @@
+- ChakraComponent:
+    description: '"""A component that wraps a Chakra component."""'
+    methods: null
+    props:
+    - 'lib_dependencies: List[str] = [        "@chakra-ui/system@2.5.7",        "framer-motion@10.16.4",    ]'
+- Global:
+    description: '"""The emotion/react Global styling component."""'
+    methods: null
+    props:
+    - 'lib_dependencies: List[str] = [        "@emotion/styled@^11.11.0",    ]'
+    - 'styles: Var[str]'
+- ChakraProvider:
+    description: '"""Top level Chakra provider must be included in any app using chakra
+      components."""'
+    methods:
+      methods:
+        create: (cls)
+    props:
+    - 'theme: Var[str]'
+- ChakraColorModeProvider:
+    description: '"""Next-themes integration for chakra colorModeProvider."""'
+    methods: null
+    props: null

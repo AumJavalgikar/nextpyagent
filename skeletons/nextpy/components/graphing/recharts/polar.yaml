@@ -1,0 +1,91 @@
+- Pie:
+    description: '"""A Pie chart component in Recharts."""'
+    methods: null
+    props:
+    - 'data: Var[List[Dict[str, Any]]]'
+    - 'data_key: Var[Union[str, int]]'
+    - 'cx: Var[Union[int, str]]'
+    - 'cy: Var[Union[int, str]]'
+    - 'inner_radius: Var[Union[int, str]]'
+    - 'outer_radius: Var[Union[int, str]]'
+    - 'start_angle: Var[int]'
+    - 'end_angle: Var[int]'
+    - 'min_angle: Var[int]'
+    - 'padding_angle: Var[int]'
+    - 'name_key: Var[str]'
+    - 'legend_type: Var[str]'
+    - 'label: Var[bool] = False'
+    - 'label_line: Var[bool]'
+    - 'valid_children: List[str] = ["Cell", "LabelList"]'
+    - 'fill: Var[str]'
+    - 'stroke: Var[str]'
+- Radar:
+    description: '"""A Radar chart component in Recharts."""'
+    methods: null
+    props:
+    - 'data_key: Var[Union[str, int]]'
+    - 'points: Var[List[Dict[str, Any]]]'
+    - 'dot: Var[bool]'
+    - 'stroke: Var[str]'
+    - 'fill: Var[str]'
+    - 'fill_opacity: Var[float]'
+    - 'legend_type: Var[str]'
+    - 'label: Var[bool]'
+    - 'animation_begin: Var[int]'
+    - 'animation_duration: Var[int]'
+    - 'animation_easing: Var[LiteralAnimationEasing]'
+    - 'valid_children: List[str] = ["LabelList"]'
+- RadialBar:
+    description: '"""A RadialBar chart component in Recharts."""'
+    methods: null
+    props:
+    - 'data: Var[List[Dict[str, Any]]]'
+    - 'min_angle: Var[int]'
+    - 'legend_type: Var[str]'
+    - 'label: Var[bool]'
+    - 'background: Var[bool]'
+    - 'valid_children: List[str] = ["LabelList"]'
+- PolarAngleAxis:
+    description: '"""A PolarAngleAxis component in Recharts."""'
+    methods: null
+    props:
+    - 'data_key: Var[Union[str, int]]'
+    - 'cx: Var[Union[int, str]]'
+    - 'cy: Var[Union[int, str]]'
+    - 'radius: Var[Union[int, str]]'
+    - 'axis_line: Var[Union[bool, Dict[str, Any]]]'
+    - 'axis_line_type: Var[str]'
+    - 'tick_line: Var[Union[bool, Dict[str, Any]]]'
+    - 'tick: Var[Union[int, str]]'
+    - 'ticks: Var[List[Dict[str, Any]]]'
+    - 'orient: Var[str]'
+    - 'allow_duplicated_category: Var[bool]'
+    - 'valid_children: List[str] = ["Label"]'
+- PolarGrid:
+    description: '"""A PolarGrid component in Recharts."""'
+    methods: null
+    props:
+    - 'cx: Var[Union[int, str]]'
+    - 'cy: Var[Union[int, str]]'
+    - 'inner_radius: Var[Union[int, str]]'
+    - 'outer_radius: Var[Union[int, str]]'
+    - 'polar_angles: Var[List[int]]'
+    - 'polar_radius: Var[List[int]]'
+    - 'grid_type: Var[LiteralGridType]'
+    - 'valid_children: List[str] = ["RadarChart", "RadiarBarChart"]'
+- PolarRadiusAxis:
+    description: '"""A PolarRadiusAxis component in Recharts."""'
+    methods: null
+    props:
+    - 'angle: Var[int]'
+    - 'type_: Var[LiteralPolarRadiusType]'
+    - 'allow_duplicated_category: Var[bool]'
+    - 'cx: Var[Union[int, str]]'
+    - 'cy: Var[Union[int, str]]'
+    - 'reversed: Var[bool]'
+    - 'orientation: Var[str]'
+    - 'axis_line: Var[Union[bool, Dict[str, Any]]]'
+    - 'tick: Var[Union[int, str]]'
+    - 'tick_count: Var[int]'
+    - 'scale: Var[LiteralScale]'
+    - 'valid_children: List[str] = ["Label"]'

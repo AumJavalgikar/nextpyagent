@@ -1,0 +1,11 @@
+- Flex:
+    description: '"""A reflexive container component."""'
+    methods: null
+    props:
+    - 'align: Var[str]'
+    - 'basis: Var[str]'
+    - 'direction: Var[Union[str, List[str]]]'
+    - 'grow: Var[str]'
+    - 'justify: Var[str]'
+    - 'wrap: Var[Union[str, List[str]]]'
+    - 'shrink: Var[str]'

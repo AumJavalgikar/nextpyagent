@@ -1,0 +1,54 @@
+- ResponsiveContainer:
+    description: '"""A base class for responsive containers in Recharts."""'
+    methods: null
+    props:
+    - 'aspect: Var[int]'
+    - 'width: Var[Union[int, str]]'
+    - 'height: Var[Union[int, str]]'
+    - 'min_width: Var[int]'
+    - 'min_height: Var[int]'
+    - 'debounce: Var[int]'
+    - 'valid_children: List[str] = [        "AreaChart",        "BarChart",        "LineChart",        "PieChart",        "RadarChart",        "RadialBarChart",        "ScatterChart",        "Treemap",        "ComposedChart",    ]'
+- Legend:
+    description: '"""A Legend component in Recharts."""'
+    methods: null
+    props:
+    - 'width: Var[int]'
+    - 'height: Var[int]'
+    - 'layout: Var[LiteralLayout]'
+    - 'align: Var[LiteralLegendAlign]'
+    - 'vertical_align: Var[LiteralVerticalAlign]'
+    - 'icon_size: Var[int]'
+    - 'icon_type: Var[LiteralIconType]'
+    - 'chart_width: Var[int]'
+    - 'chart_height: Var[int]'
+    - 'margin: Var[Dict[str, Any]]'
+- GraphingTooltip:
+    description: '"""A Tooltip component in Recharts."""'
+    methods: null
+    props:
+    - 'separator: Var[str]'
+    - 'offset: Var[int]'
+    - 'filter_null: Var[bool]'
+    - 'cursor: Var[bool]'
+    - 'view_box: Var[Dict[str, Any]]'
+    - 'active: Var[bool]'
+    - 'position: Var[Dict[str, Any]]'
+    - 'coordinate: Var[Dict[str, Any]]'
+- Label:
+    description: '"""A Label component in Recharts."""'
+    methods: null
+    props:
+    - 'view_box: Var[Dict[str, Any]]'
+    - 'value: Var[str]'
+    - 'offset: Var[int]'
+    - 'position: Var[LiteralPosition]'
+- LabelList:
+    description: '"""A LabelList component in Recharts."""'
+    methods: null
+    props:
+    - 'data_key: Var[Union[str, int]]'
+    - 'position: Var[LiteralPosition]'
+    - 'offset: Var[int]'
+    - 'fill: Var[str]'
+    - 'stroke: Var[str]'

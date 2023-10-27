@@ -1,0 +1,6 @@
+- AspectRatio:
+    description: '"""AspectRatio component is used to embed responsive videos and
+      maps, etc."""'
+    methods: null
+    props:
+    - 'ratio: Var[float]'

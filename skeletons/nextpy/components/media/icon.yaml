@@ -1,0 +1,10 @@
+- ChakraIconComponent:
+    description: '"""A component that wraps a Chakra icon component."""'
+    methods: null
+    props: null
+- Icon:
+    description: '"""An image icon."""'
+    methods:
+      methods:
+        create: (cls, *children, **props)
+    props: null

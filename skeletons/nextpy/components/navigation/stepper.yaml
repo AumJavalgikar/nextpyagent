@@ -1,0 +1,45 @@
+- Stepper:
+    description: '"""The parent container for a stepper."""'
+    methods:
+      methods:
+        create: '(        cls, *children, items: Optional[List[Tuple]] = None, **props    )'
+    props:
+    - 'colorScheme: Var[LiteralColorScheme]'
+    - 'index: Var[int]'
+    - 'size: Var[str]'
+- Step:
+    description: '"""A component for an individual step in the stepper."""'
+    methods: null
+    props: null
+- StepDescription:
+    description: '"""The description text for a step component."""'
+    methods: null
+    props: null
+- StepIcon:
+    description: '"""The icon displayed in a step indicator component."""'
+    methods: null
+    props: null
+- StepIndicator:
+    description: '"""The component displaying the status of a step."""'
+    methods: null
+    props: null
+- StepNumber:
+    description: '"""The number of a step displayed in a step indicator component."""'
+    methods: null
+    props: null
+- StepSeparator:
+    description: '"""The component separting steps."""'
+    methods: null
+    props: null
+- StepStatus:
+    description: '"""A component that displays a number or icon based on the status
+      of a step."""'
+    methods: null
+    props:
+    - 'active: Var[str]'
+    - 'complete: Var[str]'
+    - 'incomplete: Var[str]'
+- StepTitle:
+    description: '"""The title text for a step component."""'
+    methods: null
+    props: null

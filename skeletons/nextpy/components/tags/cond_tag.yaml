@@ -1,0 +1,7 @@
+- CondTag:
+    description: '"""A conditional tag."""'
+    methods: null
+    props:
+    - 'cond: Var[Any]'
+    - 'true_value: Dict'
+    - 'false_value: Optional[Dict]'

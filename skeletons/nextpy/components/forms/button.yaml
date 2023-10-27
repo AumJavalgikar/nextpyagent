@@ -1,0 +1,27 @@
+- Button:
+    description: '"""The Button component is used to trigger an event or event, such
+      as submitting a form, opening a dialog, canceling an event, or performing a
+      delete operation."""'
+    methods: null
+    props:
+    - 'icon_spacing: Var[int]'
+    - 'is_active: Var[bool]'
+    - 'is_disabled: Var[bool]'
+    - 'is_full_width: Var[bool]'
+    - 'is_loading: Var[bool]'
+    - 'loading_text: Var[str]'
+    - 'size: Var[LiteralButtonSize]'
+    - 'variant: Var[LiteralButtonVariant]'
+    - 'color_scheme: Var[LiteralColorScheme]'
+    - 'spinner_placement: Var[LiteralSpinnerPlacement]'
+    - 'type_: Var[str]'
+    - 'invalid_children: List[str] = ["Button", "MenuButton"]'
+- ButtonGroup:
+    description: '"""A group of buttons."""'
+    methods: null
+    props:
+    - 'is_attached: Var[bool]'
+    - 'is_disabled: Var[bool]'
+    - 'spacing: Var[int]'
+    - 'size: Var[LiteralButtonSize]'
+    - 'variant: Var[LiteralButtonVariant]'

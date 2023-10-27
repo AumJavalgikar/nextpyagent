@@ -1,0 +1,17 @@
+- Gridjs:
+    description: '"""A component that wraps a nivo bar component."""'
+    methods: null
+    props:
+    - 'lib_dependencies: List[str] = ["gridjs@6.0.6"]'
+- DataTable:
+    description: '"""A data table component."""'
+    methods:
+      methods:
+        create: (cls, *children, **props)
+    props:
+    - 'data: Any'
+    - 'columns: Var[List]'
+    - 'search: Var[bool]'
+    - 'sort: Var[bool]'
+    - 'resizable: Var[bool]'
+    - 'pagination: Var[Union[bool, Dict]]'

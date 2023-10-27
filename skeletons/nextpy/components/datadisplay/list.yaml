@@ -1,0 +1,21 @@
+- List:
+    description: '"""Display a list of items."""'
+    methods:
+      methods:
+        create: '(        cls, *children, items: list | Var[list] | None = None, **props    )'
+    props:
+    - 'spacing: Var[str]'
+    - 'style_position: Var[str]'
+    - 'style_type: Var[str]'
+- ListItem:
+    description: '"""A single list item."""'
+    methods: null
+    props: null
+- OrderedList:
+    description: '"""An ordered list component with numbers."""'
+    methods: null
+    props: null
+- UnorderedList:
+    description: '"""An unordered list component with bullets."""'
+    methods: null
+    props: null

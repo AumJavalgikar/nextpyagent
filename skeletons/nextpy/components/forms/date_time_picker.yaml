@@ -1,0 +1,5 @@
+- DateTimePicker:
+    description: '"""A datetime-local input component."""'
+    methods: null
+    props:
+    - 'type_: Var[str] = "datetime-local"'

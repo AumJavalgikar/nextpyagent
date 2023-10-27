@@ -1,0 +1,19 @@
+- ColorModeIcon:
+    description: '"""Displays the current color mode as an icon."""'
+    methods:
+      methods:
+        create: '(        cls,        light_component: Component | None = None,        dark_component:
+          Component | None = None,    )'
+    props: null
+- ColorModeSwitch:
+    description: '"""Switch for toggling chakra light / dark mode via toggle_color_mode."""'
+    methods:
+      methods:
+        create: (cls, *children, **props)
+    props: null
+- ColorModeButton:
+    description: '"""Button for toggling chakra light / dark mode via toggle_color_mode."""'
+    methods:
+      methods:
+        create: (cls, *children, **props)
+    props: null

@@ -1,0 +1,6 @@
+- Heading:
+    description: '"""A page heading."""'
+    methods: null
+    props:
+    - 'as_: Var[str]'
+    - 'size: Var[LiteralHeadingSize]'

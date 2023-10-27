@@ -1,0 +1,34 @@
+- Accordion:
+    description: '"""The wrapper that uses cloneElement to pass props to AccordionItem
+      children."""'
+    methods:
+      methods:
+        create: '(        cls,        *children,        items=None,        icon_pos="right",        allow_multiple:
+          Optional[Var[bool]] = None,        allow_toggle: Optional[Var[bool]] = None,        **props    )'
+    props:
+    - 'allow_multiple: Var[bool]'
+    - 'allow_toggle: Var[bool]'
+    - 'default_index: Var[Optional[List[int]]]'
+    - 'index: Var[Union[int, List[int]]]'
+    - 'reduce_motion: Var[bool]'
+- AccordionItem:
+    description: '"""A single accordion item."""'
+    methods: null
+    props:
+    - 'id_: Var[str]'
+    - 'is_disabled: Var[bool]'
+    - 'is_focusable: Var[bool]'
+- AccordionButton:
+    description: '"""The button that toggles the expand/collapse state of the accordion
+      item. This button must be wrapped in an element with role heading."""'
+    methods: null
+    props: null
+- AccordionPanel:
+    description: '"""The container for the details to be revealed."""'
+    methods: null
+    props: null
+- AccordionIcon:
+    description: '"""A chevron-down icon that rotates based on the expanded/collapsed
+      state."""'
+    methods: null
+    props: null

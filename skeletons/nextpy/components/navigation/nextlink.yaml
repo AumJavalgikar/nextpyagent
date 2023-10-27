@@ -1,0 +1,8 @@
+- NextLink:
+    description: '"""Links are accessible elements used primarily for navigation.
+      This component is styled to resemble a hyperlink and semantically renders an
+      <a>."""'
+    methods: null
+    props:
+    - 'href: Var[str]'
+    - 'pass_href: Var[bool] = True'

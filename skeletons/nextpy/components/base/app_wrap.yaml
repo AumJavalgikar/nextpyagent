@@ -1,0 +1,6 @@
+- AppWrap:
+    description: '"""Top-level component that wraps the entire app."""'
+    methods:
+      methods:
+        create: (cls)
+    props: null

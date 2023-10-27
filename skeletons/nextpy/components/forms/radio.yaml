@@ -1,0 +1,24 @@
+- RadioGroup:
+    description: '"""A grouping of individual radio options."""'
+    methods:
+      methods:
+        create: (cls, *children, **props)
+    props:
+    - 'value: Var[Any]'
+    - 'default_value: Var[Any]'
+- Radio:
+    description: '"""Radios are used when only one choice may be selected in a series
+      of options."""'
+    methods:
+      methods:
+        create: (cls, *children, **props)
+    props:
+    - 'value: Var[Any]'
+    - 'default_value: Var[Any]'
+    - 'color_scheme: Var[str]'
+    - 'default_checked: Var[bool]'
+    - 'is_checked: Var[bool]'
+    - 'is_disabled: Var[bool]'
+    - 'is_invalid: Var[bool]'
+    - 'is_read_only: Var[bool]'
+    - 'is_required: Var[bool]'

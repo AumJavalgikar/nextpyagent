@@ -1,0 +1,24 @@
+- Checkbox:
+    description: '"""The Checkbox component is used in forms when a user needs to
+      select multiple values from several options."""'
+    methods: null
+    props:
+    - 'color_scheme: Var[LiteralColorScheme]'
+    - 'size: Var[LiteralTagSize]'
+    - 'is_checked: Var[bool]'
+    - 'is_disabled: Var[bool]'
+    - 'is_focusable: Var[bool]'
+    - 'is_indeterminate: Var[bool]'
+    - 'is_invalid: Var[bool]'
+    - 'is_read_only: Var[bool]'
+    - 'is_required: Var[bool]'
+    - 'name: Var[str]'
+    - 'spacing: Var[str]'
+- CheckboxGroup:
+    description: '"""A group of checkboxes."""'
+    methods: null
+    props:
+    - 'value: Var[str]'
+    - 'default_value: Var[str]'
+    - 'is_disabled: Var[bool]'
+    - 'is_native: Var[bool]'

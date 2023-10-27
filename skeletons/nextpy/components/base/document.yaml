@@ -1,0 +1,24 @@
+- NextDocumentLib:
+    description: '"""Root document components."""'
+    methods: null
+    props: null
+- Html:
+    description: '"""The document html."""'
+    methods: null
+    props: null
+- DocumentHead:
+    description: '"""The document head."""'
+    methods: null
+    props: null
+- Main:
+    description: '"""The document main section."""'
+    methods: null
+    props: null
+- NextScript:
+    description: '"""The document main scripts."""'
+    methods: null
+    props: null
+- ColorModeScript:
+    description: '"""Chakra color mode script."""'
+    methods: null
+    props: null

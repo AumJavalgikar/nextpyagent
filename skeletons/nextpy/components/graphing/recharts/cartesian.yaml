@@ -1,0 +1,195 @@
+- Axis:
+    description: '"""A base class for axes in Recharts."""'
+    methods: null
+    props:
+    - 'data_key: Var[Union[str, int]]'
+    - 'hide: Var[bool]'
+    - 'orientation: Var[LiteralOrientationTopBottom]'
+    - 'type_: Var[LiteralPolarRadiusType]'
+    - 'allow_decimals: Var[bool]'
+    - 'allow_data_overflow: Var[bool]'
+    - 'allow_duplicated_category: Var[bool]'
+    - 'axis_line: Var[bool]'
+    - 'tick_line: Var[bool]'
+    - 'mirror: Var[bool]'
+    - 'reversed: Var[bool]'
+    - 'scale: Var[LiteralScale]'
+    - 'unit: Var[Union[str, int]]'
+    - 'name: Var[Union[str, int]]'
+- XAxis:
+    description: '"""An XAxis component in Recharts."""'
+    methods: null
+    props: null
+- YAxis:
+    description: '"""A YAxis component in Recharts."""'
+    methods: null
+    props:
+    - 'data_key: Var[Union[str, int]]'
+- ZAxis:
+    description: '"""A ZAxis component in Recharts."""'
+    methods: null
+    props:
+    - 'data_key: Var[Union[str, int]]'
+    - 'range: Var[List[int]]'
+    - 'unit: Var[Union[str, int]]'
+    - 'name: Var[Union[str, int]]'
+    - 'scale: Var[LiteralScale]'
+- Brush:
+    description: '"""A Brush component in Recharts."""'
+    methods: null
+    props:
+    - 'stroke: Var[str]'
+    - 'data_key: Var[Union[str, int]]'
+    - 'x: Var[int]'
+    - 'y: Var[int]'
+    - 'width: Var[int]'
+    - 'height: Var[int]'
+    - 'data: Var[List[Any]]'
+    - 'traveller_width: Var[int]'
+    - 'gap: Var[int]'
+    - 'start_index: Var[int]'
+    - 'end_index: Var[int]'
+- Cartesian:
+    description: '"""A base class for cartesian charts in Recharts."""'
+    methods: null
+    props:
+    - 'layout: Var[LiteralLayout]'
+    - 'data_key: Var[Union[str, int]]'
+    - 'x_axis_id: Var[Union[str, int]]'
+    - 'y_axis_id: Var[Union[str, int]]'
+- Area:
+    description: '"""An Area component in Recharts."""'
+    methods: null
+    props:
+    - 'stroke: Var[str]'
+    - 'stroke_width: Var[int]'
+    - 'fill: Var[str]'
+    - 'type_: Var[LiteralAreaType]'
+    - 'dot: Var[bool]'
+    - 'active_dot: Var[bool]'
+    - 'label: Var[bool]'
+    - 'stack_id: Var[str]'
+    - 'valid_children: List[str] = ["LabelList"]'
+- Bar:
+    description: '"""A Bar component in Recharts."""'
+    methods: null
+    props:
+    - 'stroke: Var[str]'
+    - 'stroke_width: Var[int]'
+    - 'fill: Var[str]'
+    - 'background: Var[bool]'
+    - 'label: Var[bool]'
+    - 'stack_id: Var[str]'
+    - 'bar_size: Var[int]'
+    - 'max_bar_size: Var[int]'
+    - 'valid_children: List[str] = ["Cell", "LabelList", "ErrorBar"]'
+- Line:
+    description: '"""A Line component in Recharts."""'
+    methods: null
+    props:
+    - 'type_: Var[LiteralAreaType]'
+    - 'stroke: Var[str]'
+    - 'stoke_width: Var[int]'
+    - 'dot: Var[bool]'
+    - 'active_dot: Var[bool]'
+    - 'label: Var[bool]'
+    - 'hide: Var[bool]'
+    - 'connect_nulls: Var[bool]'
+    - 'valid_children: List[str] = ["LabelList", "ErrorBar"]'
+- Scatter:
+    description: '"""A Scatter component in Recharts."""'
+    methods: null
+    props:
+    - 'data: Var[List[Dict[str, Any]]]'
+    - 'z_axis_id: Var[str]'
+    - 'line: Var[bool]'
+    - 'shape: Var[LiteralShape]'
+    - 'line_type: Var[LiteralLineType]'
+    - 'fill: Var[str]'
+    - 'name: Var[Union[str, int]]'
+    - 'valid_children: List[str] = ["LabelList", "ErrorBar"]'
+- Funnel:
+    description: '"""A Funnel component in Recharts."""'
+    methods: null
+    props:
+    - 'data: Var[List[Dict[str, Any]]]'
+    - 'animation_begin: Var[int]'
+    - 'animation_duration: Var[int]'
+    - 'animation_easing: Var[LiteralAnimationEasing]'
+    - 'valid_children: List[str] = ["LabelList", "Cell"]'
+- ErrorBar:
+    description: '"""An ErrorBar component in Recharts."""'
+    methods: null
+    props:
+    - 'direction: Var[LiteralDirection]'
+    - 'data_key: Var[Union[str, int]]'
+    - 'width: Var[int]'
+    - 'stroke: Var[str]'
+    - 'stroke_width: Var[int]'
+- Reference:
+    description: '"""A base class for reference components in Reference."""'
+    methods: null
+    props:
+    - 'x_axis_id: Var[Union[str, int]]'
+    - 'y_axis_id: Var[Union[str, int]]'
+    - 'x: Var[str]'
+    - 'y: Var[str]'
+    - 'if_overflow: Var[LiteralIfOverflow]'
+    - 'is_front: Var[bool]'
+- ReferenceLine:
+    description: '"""A ReferenceLine component in Recharts."""'
+    methods: null
+    props:
+    - 'stroke_width: Var[int]'
+    - 'valid_children: List[str] = ["Label"]'
+- ReferenceDot:
+    description: '"""A ReferenceDot component in Recharts."""'
+    methods: null
+    props:
+    - 'valid_children: List[str] = ["Label"]'
+- ReferenceArea:
+    description: '"""A ReferenceArea component in Recharts."""'
+    methods: null
+    props:
+    - 'stroke: Var[str]'
+    - 'fill: Var[str]'
+    - 'fill_opacity: Var[float]'
+    - 'x_axis_id: Var[Union[str, int]]'
+    - 'y_axis_id: Var[Union[str, int]]'
+    - 'x1: Var[Union[str, int]]'
+    - 'x2: Var[Union[str, int]]'
+    - 'y1: Var[Union[str, int]]'
+    - 'y2: Var[Union[str, int]]'
+    - 'if_overflow: Var[LiteralIfOverflow]'
+    - 'is_front: Var[bool]'
+    - 'valid_children: List[str] = ["Label"]'
+- Grid:
+    description: '"""A base class for grid components in Recharts."""'
+    methods: null
+    props:
+    - 'x: Var[int]'
+    - 'y: Var[int]'
+    - 'width: Var[int]'
+    - 'height: Var[int]'
+- CartesianGrid:
+    description: '"""A CartesianGrid component in Recharts."""'
+    methods: null
+    props:
+    - 'horizontal: Var[Dict[str, Any]]'
+    - 'vertical: Var[Dict[str, Any]]'
+    - 'fill: Var[str]'
+    - 'fill_opacity: Var[float]'
+    - 'stroke_dasharray: Var[str]'
+- CartesianAxis:
+    description: '"""A CartesianAxis component in Recharts."""'
+    methods: null
+    props:
+    - 'orientation: Var[LiteralOrientationTopBottomLeftRight]'
+    - 'axis_line: Var[bool]'
+    - 'tick_line: Var[bool]'
+    - 'tick_size: Var[int]'
+    - 'interval: Var[LiteralInterval]'
+    - 'ticks: Var[bool]'
+    - 'label: Var[str]'
+    - 'mirror: Var[bool]'
+    - 'tick_margin: Var[int]'

@@ -1,0 +1,12 @@
+- IconButton:
+    description: '"""A button with an icon."""'
+    methods: null
+    props:
+    - 'type: Var[str]'
+    - 'aria_label: Var[str]'
+    - 'icon: Var[str]'
+    - 'is_active: Var[bool]'
+    - 'is_disabled: Var[bool]'
+    - 'is_loading: Var[bool]'
+    - 'is_round: Var[bool]'
+    - 'spinner: Var[str]'

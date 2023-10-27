@@ -1,0 +1,47 @@
+- Button:
+    description: '"""Trigger an action or event, such as submitting a form or displaying
+      a dialog."""'
+    methods: null
+    props:
+    - 'as_child: Var[bool]'
+    - 'size: Var[LiteralButtonSize]'
+    - 'variant: Var[LiteralVariant]'
+    - 'color: Var[LiteralAccentColor]'
+    - 'high_contrast: Var[bool]'
+    - 'radius: Var[LiteralRadius]'
+- Switch:
+    description: '"""A toggle switch alternative to the checkbox."""'
+    methods: null
+    props:
+    - 'as_child: Var[bool]'
+    - 'default_checked: Var[bool]'
+    - 'checked: Var[bool]'
+    - 'disabled: Var[bool]'
+    - 'required: Var[bool]'
+    - 'name: Var[str]'
+    - 'value: Var[str]'
+    - 'size: Var[LiteralSwitchSize]'
+    - 'variant: Var[LiteralVariant]'
+    - 'color: Var[LiteralAccentColor]'
+    - 'high_contrast: Var[bool]'
+    - 'radius: Var[LiteralRadius]'
+- TextFieldRoot:
+    description: '"""Captures user input with an optional slot for buttons and icons."""'
+    methods: null
+    props:
+    - 'size: Var[LiteralTextFieldSize]'
+    - 'variant: Var[LiteralTextFieldVariant]'
+    - 'color: Var[LiteralAccentColor]'
+    - 'radius: Var[LiteralRadius]'
+- TextField:
+    description: '"""The input part of a TextField, may be used by itself."""'
+    methods:
+      methods:
+        create: (cls, *children, **props)
+    props: null
+- TextFieldSlot:
+    description: '"""Contains icons or buttons associated with an Input."""'
+    methods: null
+    props:
+    - 'color: Var[LiteralAccentColor]'
+    - 'gap: Var[LiteralSize]'

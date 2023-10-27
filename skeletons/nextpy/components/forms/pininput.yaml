@@ -1,0 +1,26 @@
+- PinInput:
+    description: '"""The component that provides context to all the pin-input fields."""'
+    methods:
+      methods:
+        create: (cls, *children, **props)
+    props:
+    - 'value: Var[str]'
+    - 'auto_focus: Var[bool]'
+    - 'default_value: Var[str]'
+    - 'error_border_color: Var[str]'
+    - 'focus_border_color: Var[str]'
+    - 'id_: Var[str]'
+    - 'length: Var[int]'
+    - 'is_disabled: Var[bool]'
+    - 'is_invalid: Var[bool]'
+    - 'manage_focus: Var[bool]'
+    - 'mask: Var[bool]'
+    - 'placeholder: Var[str]'
+    - 'type_: Var[str]'
+    - 'variant: Var[LiteralInputVariant]'
+- PinInputField:
+    description: '"""The text field that user types in - must be a direct child of
+      PinInput."""'
+    methods: null
+    props:
+    - 'index: Optional[Var[int]] = None'

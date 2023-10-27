@@ -1,0 +1,27 @@
+- Moment:
+    description: '"""The Moment component."""'
+    methods:
+      methods:
+        create: (cls, *children, **props)
+    props:
+    - 'tag: str = "Moment"'
+    - 'library: str = "react-moment"'
+    - 'lib_dependencies: List[str] = ["moment"]'
+    - 'interval: Var[int]'
+    - 'format: Var[str]'
+    - 'trim: Var[bool]'
+    - 'parse: Var[str]'
+    - 'from_now: Var[bool]'
+    - 'from_now_during: Var[int]'
+    - 'to_now: Var[bool]'
+    - 'with_title: Var[bool]'
+    - 'title_format: Var[str]'
+    - 'diff: Var[str]'
+    - 'decimal: Var[bool]'
+    - 'unit: Var[str]'
+    - 'duration: Var[str]'
+    - 'date: Var[str]'
+    - 'duration_from_now: Var[bool]'
+    - 'unix: Var[bool]'
+    - 'local: Var[bool]'
+    - 'tz: Var[str]'

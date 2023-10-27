@@ -1,0 +1,12 @@
+- Center:
+    description: '"""A box that centers its contents."""'
+    methods: null
+    props: null
+- Square:
+    description: '"""A centered square container."""'
+    methods: null
+    props: null
+- Circle:
+    description: '"""A square container with round border-radius."""'
+    methods: null
+    props: null

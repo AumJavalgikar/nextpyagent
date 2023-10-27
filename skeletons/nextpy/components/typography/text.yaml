@@ -1,0 +1,5 @@
+- Text:
+    description: '"""Render a paragraph of text."""'
+    methods: null
+    props:
+    - 'as_: Var[str]'

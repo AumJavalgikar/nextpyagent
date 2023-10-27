@@ -1,0 +1,11 @@
+- Progress:
+    description: '"""A bar to display progress."""'
+    methods: null
+    props:
+    - 'has_stripe: Var[bool]'
+    - 'is_animated: Var[bool]'
+    - 'is_indeterminate: Var[bool]'
+    - 'max_: Var[int]'
+    - 'min_: Var[int]'
+    - 'value: Var[Union[int, float]]'
+    - 'color_scheme: Var[str]'

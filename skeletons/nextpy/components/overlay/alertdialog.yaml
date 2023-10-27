@@ -1,0 +1,44 @@
+- AlertDialog:
+    description: '"""Provides context and state for the dialog."""'
+    methods:
+      methods:
+        create: (        cls, *children, header=None, body=None, footer=None, close_button=None,
+          **props    )
+    props:
+    - 'is_open: Var[bool]'
+    - 'least_destructive_ref: Var[str]'
+    - 'allow_pinch_zoom: Var[bool]'
+    - 'auto_focus: Var[bool]'
+    - 'block_scroll_on_mount: Var[bool]'
+    - 'close_on_esc: Var[bool]'
+    - 'close_on_overlay_click: Var[bool]'
+    - 'is_centered: Var[bool]'
+    - 'lock_focus_across_frames: Var[bool]'
+    - 'preserve_scroll_bar_gap: Var[bool]'
+    - 'return_focus_on_close: Var[bool]'
+    - 'size: Var[LiteralAlertDialogSize]'
+    - 'use_inert: Var[bool]'
+- AlertDialogBody:
+    description: '"""Should contain the description announced by screen readers."""'
+    methods: null
+    props: null
+- AlertDialogHeader:
+    description: '"""Should contain the title announced by screen readers."""'
+    methods: null
+    props: null
+- AlertDialogFooter:
+    description: '"""Should contain the events of the dialog."""'
+    methods: null
+    props: null
+- AlertDialogContent:
+    description: '"""The wrapper for the alert dialog''s content."""'
+    methods: null
+    props: null
+- AlertDialogOverlay:
+    description: '"""The dimmed overlay behind the dialog."""'
+    methods: null
+    props: null
+- AlertDialogCloseButton:
+    description: '"""The button that closes the dialog."""'
+    methods: null
+    props: null

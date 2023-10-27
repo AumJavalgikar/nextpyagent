@@ -1,0 +1,9 @@
+- Foreach:
+    description: '"""A component that takes in an iterable and a render function and
+      renders a list of components."""'
+    methods:
+      methods:
+        create: '(cls, iterable: Var[Iterable], render_fn: Callable, **props)'
+    props:
+    - 'iterable: Var[Iterable]'
+    - 'render_fn: Callable = Fragment.create'

@@ -1,0 +1,18 @@
+- Wrap:
+    description: '"""Layout component used to add space between elements and wrap
+      automatically if there isn''t enough space."""'
+    methods:
+      methods:
+        create: (cls, *children, items=None, **props)
+    props:
+    - 'align: Var[str]'
+    - 'direction: Var[str]'
+    - 'justify: Var[str]'
+    - 'should_wrap_children: Var[bool]'
+    - 'spacing: Var[str]'
+    - 'spacing_x: Var[str]'
+    - 'spacing_y: Var[str]'
+- WrapItem:
+    description: '"""Item of the Wrap component."""'
+    methods: null
+    props: null

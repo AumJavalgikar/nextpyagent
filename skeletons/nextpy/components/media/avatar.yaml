@@ -1,0 +1,23 @@
+- Avatar:
+    description: '"""The image that represents the user."""'
+    methods: null
+    props:
+    - 'icon: Var[str]'
+    - 'icon_label: Var[str]'
+    - 'ignore_fallback: Var[bool]'
+    - 'name: Var[str]'
+    - 'show_border: Var[bool]'
+    - 'src: Var[str]'
+    - 'src_set: Var[str]'
+    - 'size: Var[LiteralAvatarSize]'
+- AvatarBadge:
+    description: '"""A wrapper that displays its content on the right corner of the
+      avatar."""'
+    methods: null
+    props: null
+- AvatarGroup:
+    description: '"""A wrapper to stack multiple Avatars together."""'
+    methods: null
+    props:
+    - 'max_: Var[int]'
+    - 'spacing: Var[int]'

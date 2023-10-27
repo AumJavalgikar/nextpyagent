@@ -1,0 +1,18 @@
+- CodeBlock:
+    description: '"""A code block."""'
+    methods:
+      methods:
+        create: '(        cls,        *children,        can_copy: Optional[bool] =
+          False,        copy_button: Optional[Union[bool, Component]] = None,        **props,    )'
+    props:
+    - 'theme: Var[LiteralTheme]'
+    - 'language: Var[str]'
+    - 'show_line_numbers: Var[bool]'
+    - 'starting_line_number: Var[int]'
+    - 'wrap_long_lines: Var[bool]'
+    - 'custom_style: Dict[str, str] = {}'
+    - 'code_tag_props: Var[Dict[str, str]]'
+- Code:
+    description: '"""Used to display inline code."""'
+    methods: null
+    props: null

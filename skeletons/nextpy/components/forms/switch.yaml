@@ -1,0 +1,14 @@
+- Switch:
+    description: '"""Toggleable switch component."""'
+    methods: null
+    props:
+    - 'is_checked: Var[bool]'
+    - 'is_disabled: Var[bool]'
+    - 'is_focusable: Var[bool]'
+    - 'is_invalid: Var[bool]'
+    - 'is_read_only: Var[bool]'
+    - 'is_required: Var[bool]'
+    - 'name: Var[str]'
+    - 'spacing: Var[str]'
+    - 'placeholder: Var[str]'
+    - 'color_scheme: Var[LiteralColorScheme]'

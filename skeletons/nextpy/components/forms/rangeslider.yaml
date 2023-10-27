@@ -1,0 +1,31 @@
+- RangeSlider:
+    description: '"""The RangeSlider is a multi thumb slider used to select a range
+      of related values. A common use-case of this component is a price range picker
+      that allows a user to set the minimum and maximum price."""'
+    methods:
+      methods:
+        create: (cls, *children, **props)
+    props:
+    - 'value: Var[List[int]]'
+    - 'default_value: Var[List[int]]'
+    - 'direction: Var[LiteralChakraDirection]'
+    - 'focus_thumb_on_change: Var[bool]'
+    - 'is_disabled: Var[bool]'
+    - 'is_read_only: Var[bool]'
+    - 'is_reversed: Var[bool]'
+    - 'min_: Var[int]'
+    - 'max_: Var[int]'
+    - 'min_steps_between_thumbs: Var[int]'
+- RangeSliderTrack:
+    description: '"""A range slider track."""'
+    methods: null
+    props: null
+- RangeSliderFilledTrack:
+    description: '"""A filled range slider track."""'
+    methods: null
+    props: null
+- RangeSliderThumb:
+    description: '"""A range slider thumb."""'
+    methods: null
+    props:
+    - 'index: Var[int]'

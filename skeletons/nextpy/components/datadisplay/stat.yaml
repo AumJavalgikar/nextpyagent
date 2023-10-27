@@ -1,0 +1,29 @@
+- Stat:
+    description: '"""The Stat component is used to display some statistics. It can
+      take in a label, a number and a help text."""'
+    methods:
+      methods:
+        create: (        cls, *children, label=None, number=0, help_text=None, arrow_type=None,
+          **props    )
+    props: null
+- StatLabel:
+    description: '"""A stat label component."""'
+    methods: null
+    props: null
+- StatNumber:
+    description: '"""The stat to display."""'
+    methods: null
+    props: null
+- StatHelpText:
+    description: '"""A helper text to display under the stat."""'
+    methods: null
+    props: null
+- StatArrow:
+    description: '"""A stat arrow component indicating the direction of change."""'
+    methods: null
+    props:
+    - 'type_: Var[str]'
+- StatGroup:
+    description: '"""A stat group component to evenly space out the stats."""'
+    methods: null
+    props: null

@@ -1,0 +1,8 @@
+- Html:
+    description: null
+    methods:
+      methods:
+        create: (cls, *children, **props)
+    props:
+    - '"""Render the html.    Returns:        The code to render the  html component.    """'
+    - 'dangerouslySetInnerHTML: Any'

@@ -1,0 +1,8 @@
+- Markdown:
+    description: '"""A markdown component."""'
+    methods:
+      methods:
+        create: (cls, *children, **props)
+    props:
+    - 'component_map: Dict[str, Any] = {}'
+    - 'custom_styles: Dict[str, Any] = {}'

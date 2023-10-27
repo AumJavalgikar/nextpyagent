@@ -1,0 +1,72 @@
+- Menu:
+    description: '"""The wrapper component provides context, state, and focus management."""'
+    methods:
+      methods:
+        create: '(        cls,        *children,        button: Optional[Component]
+          = None,        items: Optional[List] = None,        **props,    )'
+    props:
+    - 'arrow_padding: Var[int]'
+    - 'auto_select: Var[bool]'
+    - 'boundary: Var[str]'
+    - 'close_on_blur: Var[bool]'
+    - 'close_on_select: Var[bool]'
+    - 'default_is_open: Var[bool]'
+    - 'direction: Var[LiteralChakraDirection]'
+    - 'flip: Var[bool]'
+    - 'gutter: Var[int]'
+    - 'is_lazy: Var[bool]'
+    - 'lazy_behavior: Var[str]'
+    - 'is_open: Var[bool]'
+    - 'match_width: Var[bool]'
+    - 'placement: Var[str]'
+    - 'prevent_overflow: Var[bool]'
+    - 'strategy: Var[LiteralMenuStrategy]'
+- MenuButton:
+    description: '"""The trigger for the menu list. Must be a direct child of Menu."""'
+    methods: null
+    props:
+    - 'variant: Var[str]'
+    - 'invalid_children: List[str] = ["Button", "MenuButton"]'
+    - 'as_: Var[str]'
+- MenuList:
+    description: '"""The wrapper for the menu items. Must be a direct child of Menu."""'
+    methods:
+      methods:
+        create: '(        cls, *children, items: Optional[list] = None, **props    )'
+    props: null
+- MenuItem:
+    description: '"""The trigger that handles menu selection. Must be a direct child
+      of a MenuList."""'
+    methods: null
+    props:
+    - 'close_on_select: Var[bool]'
+    - 'command: Var[str]'
+    - 'command_spacing: Var[int]'
+    - 'is_disabled: Var[bool]'
+    - 'is_focusable: Var[bool]'
+- MenuItemOption:
+    description: '"""The checkable menu item, to be used with MenuOptionGroup."""'
+    methods: null
+    props:
+    - 'close_on_select: Var[bool]'
+    - 'command: Var[str]'
+    - 'command_spacing: Var[int]'
+    - 'is_checked: Var[bool]'
+    - 'is_disabled: Var[bool]'
+    - 'is_focusable: Var[bool]'
+    - 'type_: Var[LiteralMenuOption]'
+    - 'value: Var[str]'
+- MenuGroup:
+    description: '"""A wrapper to group related menu items."""'
+    methods: null
+    props: null
+- MenuOptionGroup:
+    description: '"""A wrapper for checkable menu items (radio and checkbox)."""'
+    methods: null
+    props:
+    - 'type_: Var[LiteralMenuOption]'
+    - 'value: Var[str]'
+- MenuDivider:
+    description: '"""A visual separator for menu items and groups."""'
+    methods: null
+    props: null

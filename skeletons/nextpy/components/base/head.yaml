@@ -1,0 +1,8 @@
+- NextHeadLib:
+    description: '"""Header components."""'
+    methods: null
+    props: null
+- Head:
+    description: '"""Head Component."""'
+    methods: null
+    props: null

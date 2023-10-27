@@ -1,0 +1,8 @@
+- Recharts:
+    description: '"""A component that wraps a victory lib."""'
+    methods: null
+    props: null
+- RechartsCharts:
+    description: '"""A component that wraps a victory lib."""'
+    methods: null
+    props: null

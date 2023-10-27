@@ -1,0 +1,15 @@
+- ReactPlayerComponent:
+    description: null
+    methods: null
+    props:
+    - '"""Using react-player and not implement all props and callback yet.    reference:
+      https://github.com/cookpete/react-player.    """'
+    - 'url: Var[str]'
+    - 'playing: Var[bool]'
+    - 'loop: Var[bool]'
+    - 'controls: Var[bool] = True'
+    - 'light: Var[bool]'
+    - 'volume: Var[float]'
+    - 'muted: Var[bool]'
+    - 'width: Var[str]'
+    - 'height: Var[str]'

@@ -1,0 +1,6 @@
+- Badge:
+    description: '"""A badge component."""'
+    methods: null
+    props:
+    - 'variant: Var[LiteralVariant]'
+    - 'color_scheme: Var[str]'

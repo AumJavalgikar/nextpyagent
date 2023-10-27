@@ -1,0 +1,20 @@
+- Stack:
+    description: '"""Container to stack elements with spacing."""'
+    methods: null
+    props:
+    - 'align_items: Var[str]'
+    - 'direction: Var[Union[LiteralStackDirection, List[str]]]'
+    - 'is_inline: Var[bool]'
+    - 'justify_content: Var[str]'
+    - 'should_wrap_children: Var[bool]'
+    - 'spacing: Var[str]'
+    - 'wrap: Var[str]'
+    - 'justify: Var[str]'
+- Hstack:
+    description: '"""Stack items horizontally."""'
+    methods: null
+    props: null
+- Vstack:
+    description: '"""Stack items vertically."""'
+    methods: null
+    props: null

@@ -1,0 +1,25 @@
+- Select:
+    description: '"""Select component is a component that allows users pick a value
+      from predefined options. Ideally, it should be used when there are more than
+      5 options, otherwise you might consider using a radio group instead."""'
+    methods:
+      methods:
+        create: (cls, *children, **props)
+    props:
+    - 'value: Var[str]'
+    - 'default_value: Var[str]'
+    - 'placeholder: Var[str]'
+    - 'error_border_color: Var[str]'
+    - 'focus_border_color: Var[str]'
+    - 'is_disabled: Var[bool]'
+    - 'is_invalid: Var[bool]'
+    - 'is_required: Var[bool]'
+    - 'variant: Var[LiteralInputVariant]'
+    - 'size: Var[str]'
+- Option:
+    description: '"""A select option."""'
+    methods:
+      methods:
+        create: (cls, *children, **props)
+    props:
+    - 'value: Var[Any]'

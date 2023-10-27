@@ -1,0 +1,112 @@
+- ChartBase:
+    description: '"""A component that wraps a Recharts charts."""'
+    methods:
+      methods:
+        _ensure_valid_dimension: '(name: str, value: Any)'
+        create: (cls, *children, **props)
+    props:
+    - 'data: Var[List[Dict[str, Any]]]'
+    - 'sync_id: Var[str]'
+    - 'sync_method: Var[LiteralSyncMethod]'
+    - 'width: Var[Union[str, int]] = "100%"'
+    - 'height: Var[Union[str, int]] = "100%"'
+    - 'layout: Var[LiteralLayout]'
+    - 'margin: Var[Dict[str, Any]]'
+    - 'stack_offset: Var[LiteralStackOffset]'
+- AreaChart:
+    description: '"""An Area chart component in Recharts."""'
+    methods: null
+    props:
+    - 'base_value: Var[Union[int, LiteralComposedChartBaseValue]]'
+    - 'stack_offset: Var[LiteralStackOffset]'
+    - 'valid_children: List[str] = [        "XAxis",        "YAxis",        "ReferenceArea",        "ReferenceDot",        "ReferenceLine",        "Brush",        "CartesianGrid",        "Legend",        "GraphingTooltip",        "Area",    ]'
+- BarChart:
+    description: '"""A Bar chart component in Recharts."""'
+    methods: null
+    props:
+    - 'bar_category_gap: Var[Union[str, int]]'
+    - 'bar_gap: Var[Union[str, int]]'
+    - 'bar_size: Var[int]'
+    - 'max_bar_size: Var[int]'
+    - 'stack_offset: Var[LiteralStackOffset]'
+    - 'reverse_stack_order: Var[bool]'
+    - 'valid_children: List[str] = [        "XAxis",        "YAxis",        "ReferenceArea",        "ReferenceDot",        "ReferenceLine",        "Brush",        "CartesianGrid",        "Legend",        "GraphingTooltip",        "Bar",    ]'
+- LineChart:
+    description: '"""A Line chart component in Recharts."""'
+    methods: null
+    props:
+    - 'valid_children: List[str] = [        "XAxis",        "YAxis",        "ReferenceArea",        "ReferenceDot",        "ReferenceLine",        "Brush",        "CartesianGrid",        "Legend",        "GraphingTooltip",        "Line",    ]'
+- ComposedChart:
+    description: '"""A Composed chart component in Recharts."""'
+    methods: null
+    props:
+    - 'base_value: Var[Union[int, LiteralComposedChartBaseValue]]'
+    - 'bar_category_gap: Var[Union[str, int]]'
+    - 'bar_gap: Var[int]'
+    - 'bar_size: Var[int]'
+    - 'reverse_stack_order: Var[bool]'
+    - 'valid_children: List[str] = [        "XAxis",        "YAxis",        "ReferenceArea",        "ReferenceDot",        "ReferenceLine",        "Brush",        "CartesianGrid",        "Legend",        "GraphingTooltip",        "Area",        "Line",        "Bar",    ]'
+- PieChart:
+    description: '"""A Pie chart component in Recharts."""'
+    methods: null
+    props:
+    - 'valid_children: List[str] = [        "PolarAngleAxis",        "PolarRadiusAxis",        "PolarGrid",        "Legend",        "GraphingTooltip",        "Pie",    ]'
+- RadarChart:
+    description: '"""A Radar chart component in Recharts."""'
+    methods: null
+    props:
+    - 'cx: Var[Union[int, str]]'
+    - 'cy: Var[Union[int, str]]'
+    - 'start_angle: Var[int]'
+    - 'end_angle: Var[int]'
+    - 'inner_radius: Var[Union[int, str]]'
+    - 'outer_radius: Var[Union[int, str]]'
+    - 'valid_children: List[str] = [        "PolarAngleAxis",        "PolarRadiusAxis",        "PolarGrid",        "Legend",        "GraphingTooltip",        "Radar",    ]'
+- RadialBarChart:
+    description: '"""A RadialBar chart component in Recharts."""'
+    methods: null
+    props:
+    - 'cx: Var[Union[int, str]]'
+    - 'cy: Var[Union[int, str]]'
+    - 'start_angle: Var[int]'
+    - 'end_angle: Var[int]'
+    - 'inner_radius: Var[Union[int, str]]'
+    - 'outer_radius: Var[Union[int, str]]'
+    - 'bar_category_gap: Var[Union[int, str]]'
+    - 'bar_gap: Var[str]'
+    - 'bar_size: Var[int]'
+    - 'valid_children: List[str] = [        "PolarAngleAxis",        "PolarRadiusAxis",        "PolarGrid",        "Legend",        "GraphingTooltip",        "RadialBar",    ]'
+- ScatterChart:
+    description: '"""A Scatter chart component in Recharts."""'
+    methods: null
+    props:
+    - 'valid_children: List[str] = [        "XAxis",        "YAxis",        "ZAxis",        "ReferenceArea",        "ReferenceDot",        "ReferenceLine",        "Brush",        "CartesianGrid",        "Legend",        "GraphingTooltip",        "Scatter",    ]'
+- FunnelChart:
+    description: '"""A Funnel chart component in Recharts."""'
+    methods: null
+    props:
+    - 'data: Var[List[Dict[str, Any]]]'
+    - 'sync_id: Var[str]'
+    - 'sync_method: Var[str]'
+    - 'width: Var[Union[str, int]] = "100%"'
+    - 'height: Var[Union[str, int]] = "100%"'
+    - 'layout: Var[LiteralLayout]'
+    - 'margin: Var[Dict[str, Any]]'
+    - 'stack_offset: Var[LiteralStackOffset]'
+    - 'layout: Var[str]'
+    - 'valid_children: List[str] = ["Legend", "GraphingTooltip", "Funnel"]'
+- Treemap:
+    description: '"""A Treemap chart component in Recharts."""'
+    methods:
+      methods:
+        create: (cls, *children, **props)
+    props:
+    - 'width: Var[Union[str, int]] = "100%"'
+    - 'height: Var[Union[str, int]] = "100%"'
+    - 'data: Var[List[Dict[str, Any]]]'
+    - 'data_key: Var[Union[str, int]]'
+    - 'aspect_ratio: Var[int]'
+    - 'is_animation_active: Var[bool]'
+    - 'animation_begin: Var[int]'
+    - 'animation_duration: Var[int]'
+    - 'animation_easing: Var[LiteralAnimationEasing]'

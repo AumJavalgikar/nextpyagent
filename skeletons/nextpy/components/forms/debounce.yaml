@@ -1,0 +1,9 @@
+- DebounceInput:
+    description: null
+    methods: null
+    props:
+    - 'min_length: Var[int]'
+    - 'debounce_timeout: Var[int]'
+    - 'force_notify_by_enter: Var[bool]'
+    - 'force_notify_on_blur: Var[bool]'
+    - 'value: Var[str]'

@@ -1,0 +1,9 @@
+- Spinner:
+    description: '"""The component that spins."""'
+    methods: null
+    props:
+    - 'empty_color: Var[str]'
+    - 'label: Var[str]'
+    - 'speed: Var[str]'
+    - 'thickness: Var[int]'
+    - 'size: Var[LiteralSpinnerSize]'

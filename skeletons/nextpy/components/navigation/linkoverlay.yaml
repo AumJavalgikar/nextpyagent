@@ -1,0 +1,11 @@
+- LinkOverlay:
+    description: '"""Wraps child component in a link."""'
+    methods: null
+    props:
+    - 'is_external: Var[bool]'
+    - 'href: Var[str]'
+- LinkBox:
+    description: '"""The LinkBox lifts any nested links to the top using z-index to
+      ensure proper keyboard navigation between links."""'
+    methods: null
+    props: null

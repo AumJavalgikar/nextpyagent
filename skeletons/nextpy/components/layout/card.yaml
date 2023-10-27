@@ -1,0 +1,25 @@
+- CardHeader:
+    description: '"""The wrapper that contains a card''s header."""'
+    methods: null
+    props: null
+- CardBody:
+    description: '"""The wrapper that houses the card''s main content."""'
+    methods: null
+    props: null
+- CardFooter:
+    description: '"""The footer that houses the card actions."""'
+    methods: null
+    props: null
+- Card:
+    description: '"""The parent wrapper that provides context for its children."""'
+    methods:
+      methods:
+        create: '(        cls,        body: Component,        *,        header: Optional[Component]
+          = None,        footer: Optional[Component] = None,        **props,    )'
+    props:
+    - 'align: Var[str]'
+    - 'direction: Var[str]'
+    - 'justify: Var[str]'
+    - 'color_scheme: Var[LiteralColorScheme]'
+    - 'size: Var[LiteralTagSize]'
+    - 'variant: Var[LiteralCardVariant]'

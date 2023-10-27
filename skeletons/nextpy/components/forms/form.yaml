@@ -1,0 +1,29 @@
+- Form:
+    description: '"""A form component."""'
+    methods: null
+    props:
+    - 'as_: Var[str] = "form"'
+- FormControl:
+    description: '"""Provide context to form components."""'
+    methods:
+      methods:
+        create: (        cls,        *children,        label=None,        input=None,        help_text=None,        error_message=None,        **props,    )
+    props:
+    - 'is_disabled: Var[bool]'
+    - 'is_invalid: Var[bool]'
+    - 'is_read_only: Var[bool]'
+    - 'is_required: Var[bool]'
+    - 'label: Var[str]'
+- FormHelperText:
+    description: '"""A form helper text component."""'
+    methods: null
+    props: null
+- FormLabel:
+    description: '"""A form label component."""'
+    methods: null
+    props:
+    - 'html_for: Var[str]'
+- FormErrorMessage:
+    description: '"""A form error message component."""'
+    methods: null
+    props: null

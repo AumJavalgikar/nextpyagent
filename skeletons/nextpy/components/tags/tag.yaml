@@ -1,0 +1,12 @@
+- Tag:
+    description: '"""A React tag."""'
+    methods:
+      methods:
+        is_valid_prop: '(prop: Optional[Var])'
+    props:
+    - 'name: str = ""'
+    - 'props: Dict[str, Any] = {}'
+    - 'contents: str = ""'
+    - 'args: Optional[Tuple[str, ...]] = None'
+    - 'special_props: Set[Var] = set()'
+    - 'children: List[Any] = []'

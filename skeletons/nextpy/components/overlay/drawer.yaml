@@ -1,0 +1,47 @@
+- Drawer:
+    description: '"""A drawer component."""'
+    methods:
+      methods:
+        create: (        cls, *children, header=None, body=None, footer=None, close_button=None,
+          **props    )
+    props:
+    - 'is_open: Var[bool]'
+    - 'allow_pinch_zoom: Var[bool]'
+    - 'auto_focus: Var[bool]'
+    - 'block_scroll_on_mount: Var[bool]'
+    - 'close_on_esc: Var[bool]'
+    - 'close_on_overlay_click: Var[bool]'
+    - 'is_centered: Var[bool]'
+    - 'is_full_height: Var[bool]'
+    - 'lock_focus_across_frames: Var[bool]'
+    - 'placement: Var[str]'
+    - 'preserve_scroll_bar_gap: Var[bool]'
+    - 'return_focus_on_close: Var[bool]'
+    - 'size: Var[LiteralDrawerSize]'
+    - 'use_inert: Var[bool]'
+    - 'variant: Var[str]'
+    - 'color_scheme: Var[LiteralColorScheme]'
+- DrawerBody:
+    description: '"""Drawer body."""'
+    methods: null
+    props: null
+- DrawerHeader:
+    description: '"""Drawer header."""'
+    methods: null
+    props: null
+- DrawerFooter:
+    description: '"""Drawer footer."""'
+    methods: null
+    props: null
+- DrawerOverlay:
+    description: '"""Drawer overlay."""'
+    methods: null
+    props: null
+- DrawerContent:
+    description: '"""Drawer content."""'
+    methods: null
+    props: null
+- DrawerCloseButton:
+    description: '"""Drawer close button."""'
+    methods: null
+    props: null

@@ -1,0 +1,114 @@
+- Victory:
+    description: '"""A component that wraps a victory lib."""'
+    methods:
+      methods:
+        create: (cls, *children, **props)
+    props:
+    - 'data: Var[List[Dict]]'
+    - 'height: Var[str]'
+    - 'width: Var[str]'
+    - 'max_domain: Var[Dict]'
+    - 'min_domain: Var[Dict]'
+    - 'polar: Var[bool]'
+    - 'scale: Var[Dict]'
+    - 'labels: Var[List]'
+    - 'horizontal: Var[bool]'
+    - 'standalone: Var[bool]'
+    - 'sort_order: Var[str]'
+    - 'padding: Var[Dict]'
+    - 'domain_padding: Var[Dict]'
+    - 'custom_style: Var[Dict[str, str]]'
+- Chart:
+    description: '"""Wrapper component that renders a given set of children on a set
+      of Cartesian or polar axes."""'
+    methods: null
+    props:
+    - 'start_angle: Var[int]'
+    - 'end_angle: Var[int]'
+    - 'domain_padding: Var[Dict]'
+- Line:
+    description: '"""Display a victory line."""'
+    methods: null
+    props:
+    - 'interpolation: Var[str]'
+- Bar:
+    description: '"""Display a victory bar."""'
+    methods: null
+    props:
+    - 'alignment: Var[str]'
+    - 'bar_ratio: Var[float]'
+    - 'bar_width: Var[int]'
+    - 'corner_radius: Var[float]'
+- Area:
+    description: '"""Display a victory area."""'
+    methods: null
+    props:
+    - 'interpolation: Var[str]'
+- Pie:
+    description: '"""Display a victory pie."""'
+    methods: null
+    props:
+    - 'color_scale: Var[Union[str, List[str]]]'
+    - 'corner_radius: Var[float]'
+    - 'label_placement: Var[str]'
+    - 'label_position: Var[str]'
+    - 'label_radius: Var[float]'
+    - 'pad_angle: Var[float]'
+    - 'radius: Var[float]'
+    - 'inner_radius: Var[float]'
+    - 'start_angle: Var[float]'
+    - 'end_angle: Var[float]'
+- Candlestick:
+    description: '"""Display a victory candlestick."""'
+    methods: null
+    props:
+    - 'candle_colors: Var[Dict]'
+    - 'candle_ratio: Var[float]'
+    - 'candle_width: Var[float]'
+    - 'close_labels: Var[List]'
+- Scatter:
+    description: '"""Display a victory scatter."""'
+    methods: null
+    props:
+    - 'bubble_property: Var[str]'
+    - 'min_bubble_size: Var[float]'
+    - 'max_bubble_size: Var[float]'
+- BoxPlot:
+    description: '"""Display a victory boxplot."""'
+    methods: null
+    props:
+    - 'box_width: Var[float]'
+- Histogram:
+    description: '"""Display a victory histogram."""'
+    methods: null
+    props:
+    - 'bins: Var[List]'
+    - 'bin_spacing: Var[float]'
+    - 'corner_radius: Var[float]'
+- ErrorBar:
+    description: '"""Display a victory errorbar."""'
+    methods: null
+    props:
+    - 'border_width: Var[float]'
+- ChartGroup:
+    description: '"""Display a victory group."""'
+    methods: null
+    props:
+    - 'color_scale: Var[Union[str, List[str]]]'
+    - 'color: Var[str]'
+    - 'offset: Var[float]'
+- ChartStack:
+    description: '"""Display a victory stack."""'
+    methods: null
+    props:
+    - 'categories: Var[int]'
+    - 'color_scale: Var[Union[str, List[str]]]'
+- Voronoi:
+    description: '"""Display a victory Voronoi."""'
+    methods: null
+    props: null
+- Polar:
+    description: '"""Display a victory polar."""'
+    methods: null
+    props:
+    - 'dependent_axis: Var[bool]'

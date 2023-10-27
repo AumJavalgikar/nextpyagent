@@ -1,0 +1,27 @@
+- Breadcrumb:
+    description: '"""The parent container for breadcrumbs."""'
+    methods:
+      methods:
+        create: (cls, *children, items=None, **props)
+    props:
+    - 'separator: Var[str]'
+    - 'separator_margin: Var[str]'
+- BreadcrumbItem:
+    description: '"""Individual breadcrumb element containing a link and a divider."""'
+    methods:
+      methods:
+        create: (cls, *children, label=None, href=None, **props)
+    props:
+    - 'is_current_page: Var[bool]'
+    - 'is_last_child: Var[bool]'
+    - 'separator: Var[str]'
+    - 'spacing: Var[str]'
+- BreadcrumbSeparator:
+    description: '"""The visual separator between each breadcrumb."""'
+    methods: null
+    props: null
+- BreadcrumbLink:
+    description: '"""The breadcrumb link."""'
+    methods: null
+    props:
+    - 'is_current_page: Var[bool]'

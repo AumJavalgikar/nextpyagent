@@ -1,0 +1,21 @@
+- Tooltip:
+    description: '"""A tooltip message to appear."""'
+    methods: null
+    props:
+    - 'arrow_padding: Var[int]'
+    - 'arrow_shadow_color: Var[str]'
+    - 'arrow_size: Var[int]'
+    - 'delay: Var[int]'
+    - 'close_on_click: Var[bool]'
+    - 'close_on_esc: Var[bool]'
+    - 'close_on_mouse_down: Var[bool]'
+    - 'default_is_open: Var[bool]'
+    - 'direction: Var[LiteralChakraDirection]'
+    - 'gutter: Var[int]'
+    - 'has_arrow: Var[bool]'
+    - 'is_disabled: Var[bool]'
+    - 'is_open: Var[bool]'
+    - 'label: Var[str]'
+    - 'open_delay: Var[int]'
+    - 'placement: Var[str]'
+    - 'should_wrap_children: Var[bool]'

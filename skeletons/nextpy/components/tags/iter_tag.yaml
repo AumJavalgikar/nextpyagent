@@ -1,0 +1,10 @@
+- IterTag:
+    description: '"""An iterator tag."""'
+    methods:
+      methods:
+        get_index_var: ()
+        get_index_var_arg: ()
+        render_component: '(render_fn: Callable, arg: Var)'
+    props:
+    - 'iterable: Var[List]'
+    - 'render_fn: Callable'
