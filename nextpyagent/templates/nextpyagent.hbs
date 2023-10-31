@@ -1,148 +1,31 @@
 {{#system~}}
 You are an expert software developer, your task is to create components using a Python web framework called nextpy.
 The syntax for creating the components is within these files:
-justatest/nextpy\components/component.yaml
-justatest/nextpy\components/__init__.yaml
-justatest/nextpy\components\animation/__init__.yaml
-justatest/nextpy\components\animation\framer/motion.yaml
-justatest/nextpy\components\animation\framer/__init__.yaml
-justatest/nextpy\components\base/app_wrap.yaml
-justatest/nextpy\components\base/bare.yaml
-justatest/nextpy\components\base/body.yaml
-justatest/nextpy\components\base/document.yaml
-justatest/nextpy\components\base/head.yaml
-justatest/nextpy\components\base/link.yaml
-justatest/nextpy\components\base/meta.yaml
-justatest/nextpy\components\base/script.yaml
-justatest/nextpy\components\base/__init__.yaml
-justatest/nextpy\components\datadisplay/badge.yaml
-justatest/nextpy\components\datadisplay/code.yaml
-justatest/nextpy\components\datadisplay/datatable.yaml
-justatest/nextpy\components\datadisplay/divider.yaml
-justatest/nextpy\components\datadisplay/keyboard_key.yaml
-justatest/nextpy\components\datadisplay/list.yaml
-justatest/nextpy\components\datadisplay/moment.yaml
-justatest/nextpy\components\datadisplay/stat.yaml
-justatest/nextpy\components\datadisplay/table.yaml
-justatest/nextpy\components\datadisplay/tag.yaml
-justatest/nextpy\components\datadisplay/__init__.yaml
-justatest/nextpy\components\disclosure/accordion.yaml
-justatest/nextpy\components\disclosure/tabs.yaml
-justatest/nextpy\components\disclosure/transition.yaml
-justatest/nextpy\components\disclosure/visuallyhidden.yaml
-justatest/nextpy\components\disclosure/__init__.yaml
-justatest/nextpy\components\feedback/alert.yaml
-justatest/nextpy\components\feedback/circularprogress.yaml
-justatest/nextpy\components\feedback/progress.yaml
-justatest/nextpy\components\feedback/skeleton.yaml
-justatest/nextpy\components\feedback/spinner.yaml
-justatest/nextpy\components\feedback/__init__.yaml
-justatest/nextpy\components\forms/button.yaml
-justatest/nextpy\components\forms/checkbox.yaml
-justatest/nextpy\components\forms/colormodeswitch.yaml
-justatest/nextpy\components\forms/date_picker.yaml
-justatest/nextpy\components\forms/date_time_picker.yaml
-justatest/nextpy\components\forms/debounce.yaml
-justatest/nextpy\components\forms/editable.yaml
-justatest/nextpy\components\forms/editor.yaml
-justatest/nextpy\components\forms/email.yaml
-justatest/nextpy\components\forms/form.yaml
-justatest/nextpy\components\forms/iconbutton.yaml
-justatest/nextpy\components\forms/input.yaml
-justatest/nextpy\components\forms/multiselect.yaml
-justatest/nextpy\components\forms/numberinput.yaml
-justatest/nextpy\components\forms/password.yaml
-justatest/nextpy\components\forms/pininput.yaml
-justatest/nextpy\components\forms/radio.yaml
-justatest/nextpy\components\forms/rangeslider.yaml
-justatest/nextpy\components\forms/select.yaml
-justatest/nextpy\components\forms/slider.yaml
-justatest/nextpy\components\forms/switch.yaml
-justatest/nextpy\components\forms/textarea.yaml
-justatest/nextpy\components\forms/upload.yaml
-justatest/nextpy\components\forms/__init__.yaml
-justatest/nextpy\components\graphing/plotly.yaml
-justatest/nextpy\components\graphing/victory.yaml
-justatest/nextpy\components\graphing/__init__.yaml
-justatest/nextpy\components\graphing\recharts/cartesian.yaml
-justatest/nextpy\components\graphing\recharts/charts.yaml
-justatest/nextpy\components\graphing\recharts/general.yaml
-justatest/nextpy\components\graphing\recharts/polar.yaml
-justatest/nextpy\components\graphing\recharts/recharts.yaml
-justatest/nextpy\components\graphing\recharts/__init__.yaml
-justatest/nextpy\components\layout/aspect_ratio.yaml
-justatest/nextpy\components\layout/box.yaml
-justatest/nextpy\components\layout/card.yaml
-justatest/nextpy\components\layout/center.yaml
-justatest/nextpy\components\layout/cond.yaml
-justatest/nextpy\components\layout/container.yaml
-justatest/nextpy\components\layout/flex.yaml
-justatest/nextpy\components\layout/foreach.yaml
-justatest/nextpy\components\layout/fragment.yaml
-justatest/nextpy\components\layout/grid.yaml
-justatest/nextpy\components\layout/html.yaml
-justatest/nextpy\components\layout/responsive.yaml
-justatest/nextpy\components\layout/spacer.yaml
-justatest/nextpy\components\layout/stack.yaml
-justatest/nextpy\components\layout/wrap.yaml
-justatest/nextpy\components\layout/__init__.yaml
-justatest/nextpy\components\libs/chakra.yaml
-justatest/nextpy\components\libs/react_player.yaml
-justatest/nextpy\components\libs/__init__.yaml
-justatest/nextpy\components\media/audio.yaml
-justatest/nextpy\components\media/avatar.yaml
-justatest/nextpy\components\media/icon.yaml
-justatest/nextpy\components\media/image.yaml
-justatest/nextpy\components\media/video.yaml
-justatest/nextpy\components\media/__init__.yaml
-justatest/nextpy\components\navigation/breadcrumb.yaml
-justatest/nextpy\components\navigation/client_side_routing.yaml
-justatest/nextpy\components\navigation/link.yaml
-justatest/nextpy\components\navigation/linkoverlay.yaml
-justatest/nextpy\components\navigation/nextlink.yaml
-justatest/nextpy\components\navigation/stepper.yaml
-justatest/nextpy\components\navigation/__init__.yaml
-justatest/nextpy\components\overlay/alertdialog.yaml
-justatest/nextpy\components\overlay/banner.yaml
-justatest/nextpy\components\overlay/drawer.yaml
-justatest/nextpy\components\overlay/menu.yaml
-justatest/nextpy\components\overlay/modal.yaml
-justatest/nextpy\components\overlay/popover.yaml
-justatest/nextpy\components\overlay/tooltip.yaml
-justatest/nextpy\components\overlay/__init__.yaml
-justatest/nextpy\components\radix/__init__.yaml
-justatest/nextpy\components\radix\themes/base.yaml
-justatest/nextpy\components\radix\themes/components.yaml
-justatest/nextpy\components\radix\themes/layout.yaml
-justatest/nextpy\components\radix\themes/typography.yaml
-justatest/nextpy\components\radix\themes/__init__.yaml
-justatest/nextpy\components\tags/cond_tag.yaml
-justatest/nextpy\components\tags/iter_tag.yaml
-justatest/nextpy\components\tags/tag.yaml
-justatest/nextpy\components\tags/tagless.yaml
-justatest/nextpy\components\tags/__init__.yaml
-justatest/nextpy\components\typography/heading.yaml
-justatest/nextpy\components\typography/highlight.yaml
-justatest/nextpy\components\typography/markdown.yaml
-justatest/nextpy\components\typography/span.yaml
-justatest/nextpy\components\typography/text.yaml
-justatest/nextpy\components\typography/__init__.yaml
+
+{{file_list}}
 
 You currently have access to the following files :
+
+{{file_information}}
+
+The syntax for creating a component is :
+
+{{component_syntax}}
 
 {{~/system}}
 
 {{#user~}}
-The client wishes for you to generate components for given requirements:
+You need to generate components for given requirements:
 
 {{component_description}}
 
-    The syntax for creating a component is xt.component_name(props)
-where the xt module contains all the components, props are keyword arguments that define various properties of a component.
+Create a response in JSON format:
 
-In order to create a component according to the clients needs will you require access to any files? if so list them all out now so you can get access, if not then say "No files needed".
+{{response_format}}
+
+You can either generate the component or request access to a file to see all available parameters, description and syntax.
 {{~/user}}
 
 {{#assistant~}}
-{{gen 'components' temperature=0 max_tokens=500}}
+{{gen 'response' temperature=0 max_tokens=500}}
 {{~/assistant}}
