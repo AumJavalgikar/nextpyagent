@@ -39,9 +39,9 @@ class NextPyAgent(BaseAgent):
         self.output_key = 'components'
         self.file_list = []
 
-        components_dir = Path('justatest/nextpy/components')
+        components_dir = Path('skeletons/nextpy/components')
         for glob in components_dir.rglob("*.yaml"):
-            self.file_list.append(f'justatest/{glob.parent}/{glob.name}')
+            self.file_list.append(f'skeletons/{glob.parent}/{glob.name}')
 
         self.file_information: List[Dict] = []
 
