@@ -5,6 +5,7 @@ from dotagent.compiler import Program
 from pathlib import Path
 from dotenv import load_dotenv
 import json
+import yaml
 from typing import List, Dict
 
 
@@ -14,17 +15,22 @@ api_key = os.getenv('OPENAI_API_KEY')
 
 class AgentResponse:
     def __init__(self, compiler_output):
-        """todo - complete this class to encapsulate the json response from the agent"""
-
+        """
+        Encapsulates the json response from the agent
+        """
         output = json.loads(compiler_output)
-
-        pass
+        self.type = output.get('response_type')
+        self.generated_components = output.get('generated_components')
+        self.files_requested = output.get('files_requested')
+        self.file_access_reason = output.get('file_access_reason')
 
 
 class Component:
     def __init__(self, component_description):
-        """todo - complete this class to encapsulate the component from the AgentResponse"""
-        pass
+        """
+        Encapsulate the component from the AgentResponse
+        """
+        self.component_code = component_description
 
 
 class NextPyAgent(BaseAgent):
@@ -32,22 +38,22 @@ class NextPyAgent(BaseAgent):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         if (llm := kwargs.get('llm')) is None:
-            llm = compiler.llms.OpenAI(model='gpt-3.5-turbo-16k', api_key=api_key)
+            llm = compiler.llms.OpenAI(model='gpt-4', api_key=api_key)
 
         template = Path(f'./templates/nextpyagent.hbs').read_text()
-        self.compiler: Program = compiler(template=template, llm=llm, memory=None, async_mode=True)
+        self.compiler: Program = compiler(template=template, llm=llm, memory=None)
         self.output_key = 'components'
         self.file_list = []
 
         components_dir = Path('skeletons/nextpy/components')
         for glob in components_dir.rglob("*.yaml"):
-            self.file_list.append(f'skeletons/{glob.parent}/{glob.name}')
+            self.file_list.append(f'{glob.parent}/{glob.name}')
 
         self.file_information: List[Dict] = []
 
         # todo - Complete this response format to get a json response from the agent
         self.response_format = '''{ 
-        "response_type" : "component_generate"/"file_access_request",
+        "response_type" : "generate_components"/"request_file_access",
         "generated_components" : [
         "```code that generates required component```",
         "```component 2```",
@@ -56,26 +62,38 @@ class NextPyAgent(BaseAgent):
         "files_requested" : [
         "path/to/file1.yaml",
         "path/to/file2.yaml"
-        ]
+        ],
+        "file_access_reason" : "I want access to these files because..",
+        "generate_component_reason": "I have generated the component component_name because I have access to it's .yaml file path/to/.yaml file"
         }
         '''
 
     def parse_file_information(self) -> str:
-        """todo - return a formatted string with filename, file contents of each file, which will go into the prompt"""
-        pass
+        """
+        Returns a formatted string with filename, file contents of each file, which will go into the prompt
+        """
+        nl = '\n'
+        return '\n'.join([f"File name : \n{file_info['file_name']}{nl}File Contents :{nl} {file_info['file_contents']}{nl}" for file_info in self.file_information])
 
     def add_file_information(self, file_names) -> None:
-        """todo - add file information to self.file_information as
-           todo - dicts in the format {"file_name" : "name of file", "file_content" : "contents of file"}"""
-        pass
+        """
+        Adds file information to self.file_information as
+        dicts in the format {"file_name" : "name of file", "file_content" : "contents of file"}
+        """
+        for file_path in file_names:
+            file_path = Path(file_path)
+            with open(file_path) as f:
+                file_contents = f.read()
+            self.file_information.append({'file_name': str(file_path), 'file_contents': file_contents})
 
     def run(self, component_description):
         while True:
-            output = self.compiler(file_list='files available :\n' + '\n'.join(self.file_list),
+            output = self.compiler(file_list='List of all files :\n' + '\n'.join(self.file_list),
                                    file_information='No file information yet..' if len(self.file_information) == 0 else self.parse_file_information(),
-                                   component_description=component_description, silent=True, from_agent=True)
+                                   response_format=self.response_format, component_description=component_description, silent=True, from_agent=True)
+            print(output)
+            output = output.get('response')
             response = AgentResponse(output)
-
             if response.type == 'component_generate':
                 return generate_components(response)
             else:
@@ -83,9 +101,7 @@ class NextPyAgent(BaseAgent):
 
 
 def generate_components(response: AgentResponse) -> List[Component]:
-    """todo - return a list of components generated from the AgentResponse object"""
-    pass
-
-
-
-
+    """
+    Returns a list of components generated from the AgentResponse object
+    """
+    return [Component(component) for component in response.generated_components]
